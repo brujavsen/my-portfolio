@@ -1,4 +1,6 @@
 import React from 'react'
+import { HiMail, HiOutlinePhone } from "react-icons/hi";
+import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 const Contact = () => {
   return (
@@ -13,6 +15,13 @@ const Contact = () => {
           <textarea placeholder='Motivo de contacto...' />
           <input type='submit' value="Enviar"/>
       </form>
+
+      <div className='contact-media'>
+          <p><HiMail/> brunojavsena@gmail.com</p>
+          <p><HiOutlinePhone/> 095048957</p>
+          <a href='https://www.linkedin.com/in/bruno-sena-webdev' target='_blank' rel='noreferrer'><BiLogoLinkedin/></a>
+          <a href='https://github.com/brujavsen' target='_blank' rel='noreferrer'><BiLogoGithub/></a> 
+      </div>
     </div>
   )
 }

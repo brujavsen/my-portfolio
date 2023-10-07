@@ -265,6 +265,17 @@ button:hover,
   background-color: rgb(235, 135, 155);
 }
 
+.contact-media a {
+  color: #777;
+  font-size: 2.5rem;
+  margin: 0 1rem;
+  transition: .3s ease-in;
+}
+.contact-media a:hover {
+  font-size: 2.8rem;
+  color: crimson;
+}
+
 /* PORTFOLIO */
 .works {
   display: flex;
@@ -361,16 +372,6 @@ button:hover,
 .info-basic p {
   color: #777;
   font-size: 1.5rem;
-}
-.info-basic a {
-  color: #777;
-  font-size: 2.5rem;
-  margin: 0 1rem;
-  transition: .3s ease-in;
-}
-.info-basic a:hover {
-  font-size: 2.8rem;
-  color: crimson;
 }
 
 /* Know */

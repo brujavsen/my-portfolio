@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
-import { HiMail, HiOutlinePhone } from "react-icons/hi";
-import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
+
 
 const Resume = () => {
 
@@ -41,10 +40,6 @@ const Resume = () => {
                 <h2>{about.aboutMe.profile.title}</h2>
                 <h2>{about.aboutMe.profile.name} {about.aboutMe.profile.surnames}</h2>
                 <p>{about.aboutMe.profile.description}</p>
-                <p><HiMail/> {about.careerPreferences.contact.contactMails}</p>
-                <p><HiOutlinePhone/> {about.careerPreferences.contact.phoneNumbers[0].number}</p>
-                <a href={about.careerPreferences.contact.publicProfiles[0].URL} target='_blank' rel='noreferrer'><BiLogoLinkedin/></a>
-                <a href={about.careerPreferences.contact.publicProfiles[0].URL} target='_blank' rel='noreferrer'><BiLogoGithub/></a> 
               </Fragment>
             ))
           ) : (
