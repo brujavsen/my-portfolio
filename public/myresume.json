@@ -1,0 +1,385 @@
+[
+  {
+    "$schema": "https://raw.githubusercontent.com/getmanfred/mac/v0.3/schema/schema.json",
+    "settings": {
+      "language": "ES",
+      "MACVersion": "0.3"
+    },
+    "aboutMe": {
+      "profile": {
+        "name": "Bruno",
+        "surnames": "Sena",
+        "title": "Programador Jr Front-End",
+        "description": "Desarrollador web Front-End.\n\nAdoro los desafíos con interés de aprender. Perseverante y proactivo, con capacidad de adaptabilidad y trabajo en equipo. Con la iniciativa de ampliar mis conocimientos y seguir desarrollando todo lo aprendido.",
+        "descriptionEng":"FrontEnd web developer.\n\nI love challenges with an interest in learning. Persevering and proactive, with the capacity for adaptability and teamwork. With the initiative to expand my knowledge and continue developing everything I have learned.",
+        "location": {
+          "notes": "Autocompleted using Google Maps API (id: ChIJQSRS0s0uoJURhHVDviii1xk)",
+          "country": "Uruguay",
+          "region": "Departamento de Canelones",
+          "municipality": "Toledo"
+        }
+      }
+    },
+    "experience": {
+      "jobs": [
+        {
+          "organization": {
+            "name": "Arbusta",
+            "image": {
+              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/ad2aeef3-af8c-4977-b8b5-5cdc8fe8ace2_arbusta.png",
+              "alt": "arbusta.png"
+            },
+            "URL": "https://arbusta.net/"
+          },
+          "roles": [
+            {
+              "name": "Junior QA",
+              "startDate": "2022-07-01",
+              "finishDate": "2023-01-01",
+              "challenges": [
+                {
+                  "description": "Formé parte del equipo de QA a partir de julio del 2022, primero como trainee diseñando casos de pruebas manuales, ejecución de pruebas, pruebas exploratorias, reporte de defectos, mantenimiento de documentación con aprendizaje continuo en la plataforma de Platzi.\n\nAptitudes: Pruebas exploratorias - Pruebas funcionales - Ejecución de pruebas - Pruebas manuales - Casos de prueba - Servicio de atención al cliente - Capacidad de análisis - Análisis de datos - Análisis de requisitos"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "organization": {
+            "name": "Arbusta",
+            "image": {
+              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/1ac0e499-1361-40e8-ac4a-97c5869c68d0_arbusta.png",
+              "alt": "arbusta.png"
+            },
+            "URL": "https://arbusta.net/"
+          },
+          "roles": [
+            {
+              "name": "Analyst Customer Experience (CX)",
+              "startDate": "2021-12-01",
+              "finishDate": "2022-06-01",
+              "challenges": [
+                {
+                  "description": "Formé parte del equipo de analistas del programa de Brand Protection Program (BPP) de Mercado Libre. Con el objetivo de asegurar la protección de la propiedad intelectual de los miembros adheridos al programa y brindando atención a los usuarios.\nTareas:\n- Adhesiones al programa, tanto como consultas de miembros y gestionar denuncias.\n- Analizar y validar documentación de propiedad intelectual enviada por los miembros, así como validar derechos ante institutos que corresponden según el país.\n- Valorar la atención a los usuarios brindando soluciones.\n- Detectar oportunidades de mejora para nuestro cliente, según el uso de la herramienta y los procesos que se llevaban a cabo.\n- Aportar mejoras en proyecto de soluciones, para brindar soluciones eficaces para miembros y usuarios.\n- Alcanzar objetivos de productividad y calidad, así como métricas definidas."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "organization": {
+            "name": "Arbusta",
+            "image": {
+              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/fe6d8ca9-114c-451d-ab65-2d3f0f38aa56_arbusta.png",
+              "alt": "arbusta.png"
+            },
+            "URL": "https://arbusta.net/"
+          },
+          "roles": [
+            {
+              "name": "Analyst Customer Experience (CX)",
+              "startDate": "2021-09-01",
+              "finishDate": "2021-11-01",
+              "challenges": [
+                {
+                  "description": "Formé parte del equipo de analista de programa de denuncias de Mercado Libre. Con el objetivo de evitar que exista y se compartan datos personales, así también como la ejecución de prácticas prohibidas en las publicaciones del sitio; a través de una herramienta.\n\nTareas:\n- Realizar análisis y moderación de anuncios en portugués a través de la herramienta.\n- Llevar reporte de anuncios mal moderados.\n- Alcanzar objetivos de calidad y productividad definidos.\n- Capacitar nuevos ingresos al programa.\n- Mantenerme actualizado con cambios en el servicio y proceso."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "knowledge": {
+      "languages": [
+        {
+          "name": "Inglés",
+          "level": "Competencia básica"
+        },
+        {
+          "name": "Español",
+          "level": "Nativo"
+        },
+        {
+          "name": "Portugués",
+          "level": "Competencia profesional completa"
+        }
+      ],
+      "hardSkills": [
+        {
+          "skill": {
+            "name": "CSS",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "Google Sheets",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "HTML",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "JavaScript",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "MySQL",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "React",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "Sass",
+            "type": "technology"
+          }
+        },
+        {
+          "skill": {
+            "name": "Tailwind",
+            "type": "technology"
+          }
+        }
+      ],
+      "studies": [
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "Build a Web Page with HTML and CSS",
+          "startDate": "2023-08-01",
+          "institution": {
+            "name": "Coursera",
+            "URL": "https://coursera.org/share/0bc0421224639fb1715ae43162e9f028"
+          },
+          "linkedCompetences": [
+            {
+              "name": "Bootstrap",
+              "type": "technology"
+            },
+            {
+              "name": "CSS",
+              "type": "technology"
+            },
+            {
+              "name": "HTML",
+              "type": "technology"
+            }
+          ]
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "Curso JavaScript Moderno",
+          "startDate": "2023-07-01",
+          "institution": {
+            "name": "Udemy",
+            "description": "El curso cuenta con 20+ proyectos. Enseñando fundamentos desde básico hasta avanzando en JavaScript e implementa otras tecnologías como Node.Js, Vue.Js, React, Express, entre otros.",
+            "URL": "https://www.udemy.com/certificate/UC-38ce03f6-b5c7-44d8-ad28-0ca63bd903c5/",
+            "image": {
+              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/65cf2ab1-a7b4-4186-99a7-3d7c4baee8be_certificado-dw-bruno.jpg",
+              "alt": "certificado-dw-bruno.jpg"
+            }
+          },
+          "linkedCompetences": [
+            {
+              "name": "CSS",
+              "type": "technology"
+            },
+            {
+              "name": "Cypress",
+              "type": "technology"
+            },
+            {
+              "name": "Express",
+              "type": "technology"
+            },
+            {
+              "name": "HTML",
+              "type": "technology"
+            },
+            {
+              "name": "JavaScript",
+              "type": "technology"
+            },
+            {
+              "name": "Jest",
+              "type": "technology"
+            },
+            {
+              "name": "MongoDB",
+              "type": "technology"
+            },
+            {
+              "name": "NodeJS",
+              "type": "technology"
+            },
+            {
+              "name": "React",
+              "type": "technology"
+            },
+            {
+              "name": "Tailwind",
+              "type": "technology"
+            },
+            {
+              "name": "Vue",
+              "type": "technology"
+            }
+          ]
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "Fundamentos y técnicas de testing",
+          "startDate": "2022-07-01",
+          "institution": {
+            "name": "Quassure",
+            "image": {
+              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/5f5aca3d-d554-473f-a59d-8c9a628450f1_certificado.png",
+              "alt": "certificado.png"
+            }
+          }
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "JavaScript for Web Development",
+          "startDate": "2023-09-01",
+          "institution": {
+            "name": "Coursera",
+            "URL": "https://coursera.org/share/b81b2d281ab320f1720ac6801098a064"
+          },
+          "linkedCompetences": [
+            {
+              "name": "CSS",
+              "type": "technology"
+            },
+            {
+              "name": "HTML",
+              "type": "technology"
+            },
+            {
+              "name": "JavaScript",
+              "type": "technology"
+            },
+            {
+              "name": "jQuery",
+              "type": "technology"
+            }
+          ]
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "Testing QA Manual",
+          "startDate": "2022-09-01",
+          "institution": {
+            "name": "Coderhouse",
+            "description": "Pruebas exploratorias, pruebas funcionales, ejecución de pruebas, pruebas manuales, casos de pruebas, entre otros.",
+            "image": {
+              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/761bd941-6e87-4eb9-a64a-47cf5cac342b_certificado-testing.png",
+              "alt": "certificado-testing.png"
+            }
+          }
+        }
+      ],
+      "softSkills": [
+        {
+          "skill": {
+            "name": "Adaptabilidad al cambio",
+            "type": "practice"
+          }
+        },
+        {
+          "skill": {
+            "name": "Resistencia a la frustración",
+            "type": "practice"
+          }
+        },
+        {
+          "skill": {
+            "name": "Trabajo en equipo",
+            "type": "practice"
+          }
+        }
+      ]
+    },
+    "careerPreferences": {
+      "contact": {
+        "publicProfiles": [
+          {
+            "URL": "https://www.linkedin.com/in/bruno-sena-webdev",
+            "type": "linkedin"
+          },
+          {
+            "URL": "https://github.com/brujavsen",
+            "type": "github"
+          }
+        ],
+        "contactMails": [
+          "brunojavsena@gmail.com"
+        ],
+        "phoneNumbers": [
+          {
+            "number": "095048957",
+            "countryCode": "+598"
+          }
+        ]
+      },
+      "preferences": {
+        "preferredCompetences": [
+          {
+            "name": "CSS",
+            "type": "technology"
+          },
+          {
+            "name": "Git",
+            "type": "technology"
+          },
+          {
+            "name": "HTML",
+            "type": "technology"
+          },
+          {
+            "name": "JavaScript",
+            "type": "technology"
+          },
+          {
+            "name": "NodeJS",
+            "type": "technology"
+          },
+          {
+            "name": "React",
+            "type": "technology"
+          },
+          {
+            "name": "Sass",
+            "type": "technology"
+          },
+          {
+            "name": "Tailwind",
+            "type": "technology"
+          }
+        ],
+        "preferredRoles": [
+          "Frontend Developer"
+        ]
+      },
+      "status": "searchingActively"
+    }
+  }
+]
