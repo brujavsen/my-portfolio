@@ -43,19 +43,20 @@ p {
 }
 
 .dark-mode {
-    position: absolute;
-    font-size: 3.5rem;
+    position: fixed;
+    font-size: 4rem;
     text-align: center;
-    top: -700px;
-    left: 0;
-    right: 0;
     bottom: 0;
-    margin: auto;
+    left: 0;
     background-color: v.$black;
     color: v.$white;
-    border-radius: 50%;
+    border-radius: 0 2rem 0 0 ;
     padding: .2rem;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+    &:hover {
+        font-size: 5rem;
+    }
 }
 
 /* PAGE */
