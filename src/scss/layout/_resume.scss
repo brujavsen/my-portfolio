@@ -1,0 +1,165 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+/* RESUME */
+.resume-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* INFO BASIC */
+    .info-basic {
+      grid-column: 1 / 4;
+
+      h2 {
+        &:nth-child(1) {
+          color: v.$red;
+          font-size: 3.5rem;
+          @include m.desktop {
+            color: v.$red;
+            font-size: 3rem;
+          }
+        }
+        &:nth-child(2) {
+          color: v.$gray;
+          font-size: 3.5rem;
+          @include m.desktop {
+            font-size: 3rem;
+          }
+        }
+      }
+      p {
+        color: v.$gray;
+        font-size: 2rem;
+        @include m.desktop {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    
+    /* Know */
+    .know-cnt{
+      grid-column: 1 / 4;
+      grid-row: 2 / 5;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        box-shadow: 0px 0px 10px #eee;
+        border-radius: 10px;
+        width: 100%;
+        height: fit-content;
+        margin: 10px 0;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        background-color: v.$red;
+        color: v.$white;
+      }
+      p {
+        margin: 2rem;
+        font-size: 2.5rem;
+
+        &:nth-child(even) {
+          color: v.$red;
+        }
+      }
+
+      i {
+        font-size: 5rem;
+        margin: 1rem;
+      }
+
+      .lang {
+        font-size: 2.5rem;
+        display: block;
+        font-weight: 600;
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+
+    /* Experiencia */
+    .exp-cnt {
+      grid-column: 1 / 4;
+      grid-row: 5 / 6;
+    
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+        background-color: v.$red;
+        color: v.$white;
+      }
+      section{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        @include m.desktop {
+          flex-direction: column;
+        }
+      }
+      .card {
+        box-shadow: 0px 0px 10px #eee;
+        padding: 0 2rem;
+        h3 {
+          text-transform: uppercase;
+          span {
+            font-weight: 500;
+            text-transform: capitalize;
+          }
+        }
+        img {
+          width: 120px;
+          height: 100px;
+        }
+      }
+    }
+    /* Education */
+    .education {
+      grid-column: 1 / 4;
+      grid-row: 6 / 7;
+      
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+        background-color: v.$red;
+        color: v.$white;
+      }
+      section{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        @include m.desktop {
+          flex-direction: column;
+        }
+      }
+      .card {
+        border-radius: 5px;
+        padding: 1.3rem;
+        box-shadow: 0px 0px 10px v.$gray;
+        p {
+          &:nth-child(1) {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+          &:nth-child(2) {
+            font-size: 2rem;
+            font-weight: 500;
+          }
+        }
+        a {
+          color: v.$red;
+          font-weight: bold;
+        }
+      }
+    }
+    .fbasis {
+      height: fit-content;
+      margin: 10px;
+    }
+}

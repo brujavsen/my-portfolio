@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+/* HOME */
+.home {
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 80px;
+
+    @include m.desktop {
+      font-size: 40px;
+    }
+  }
+  strong {
+    color: v.$red;
+  }
+
+  
+  .title {
+    font-size: 2rem;
+    color: v.$gray;
+    font-weight: 400;
+    a {
+      color: v.$red;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+  .heading {
+    margin-top: 10rem;
+    font-size: 30px;
+    font-weight: 500;
+    color: v.$black;
+  }
+  p {
+    color: #777;
+  }
+}

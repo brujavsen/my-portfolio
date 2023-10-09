@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: v.$font-p;
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.layout {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+}
+
+/* MAIN CONTENT */
+.content {
+    min-height: 500px;
+}
+
+.dark-mode {
+    position: absolute;
+    font-size: 3.5rem;
+    text-align: center;
+    top: -700px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: v.$black;
+    color: v.$white;
+    border-radius: 50%;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+/* PAGE */
+.page .heading {
+    font-size: 55px;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: 500;
+    color: v.$black;
+}
+
+a {
+    text-decoration: none;
+}

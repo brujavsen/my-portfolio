@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from 'react'
+import { BiLogoHtml5, BiLogoBootstrap, BiLogoCss3, BiLogoTailwindCss, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoReact } from "react-icons/bi";
 
 
 const Resume = () => {
@@ -51,19 +52,14 @@ const Resume = () => {
         <div className='fbasis know-cnt'>
           <div>
             <h3>Habilidades</h3>
-            {data.length > 0 ? (
-              data.map((about, index) => (
-                <section key={index}>
-                  {about.knowledge.hardSkills.map((skill, index) => (
-                    <Fragment key={index}>
-                      <p>{skill.skill.name}</p>
-                    </Fragment>
-                  ))}
-                </section>
-              ))
-            ) : (
-              <div>Loading...</div>
-            )}
+            <i><BiLogoHtml5/></i>
+            <i><BiLogoCss3/></i>
+            <i><BiLogoJavascript/></i>
+            <i><BiLogoBootstrap/></i>
+            <i><BiLogoTailwindCss/></i>
+            <i><BiLogoMongodb/></i>
+            <i><BiLogoNodejs/></i>
+            <i><BiLogoReact/></i>
           </div>
           {/* Idiomas */}
           <div>
