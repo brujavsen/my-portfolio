@@ -12,10 +12,10 @@
 
       h2 {
         &:nth-child(1) {
-          color: v.$red;
+          color: v.$blue;
           font-size: 3.5rem;
           @include m.desktop {
-            color: v.$red;
+            color: v.$blue;
             font-size: 3rem;
           }
         }
@@ -56,7 +56,7 @@
         text-align: center;
         font-size: 3rem;
         text-transform: uppercase;
-        background-color: v.$red;
+        background-color: v.$blue;
         color: v.$white;
       }
       p {
@@ -64,7 +64,7 @@
         font-size: 2.5rem;
 
         &:nth-child(even) {
-          color: v.$red;
+          color: v.$blue;
         }
       }
 
@@ -91,7 +91,7 @@
       h2 {
         font-size: 3rem;
         text-align: center;
-        background-color: v.$red;
+        background-color: v.$blue;
         color: v.$white;
       }
       section{
@@ -126,7 +126,7 @@
       h2 {
         font-size: 3rem;
         text-align: center;
-        background-color: v.$red;
+        background-color: v.$blue;
         color: v.$white;
       }
       section{
@@ -153,7 +153,7 @@
           }
         }
         a {
-          color: v.$red;
+          color: v.$blue;
           font-weight: bold;
         }
       }

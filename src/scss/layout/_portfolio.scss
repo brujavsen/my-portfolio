@@ -8,7 +8,7 @@
     .work-item {
       flex-basis: 25%;
       flex-grow: 1;
-      box-shadow: 0px 0px 10px #ddd;
+      box-shadow: 0px 0px 10px v.$gray-p;
       margin: 10px;
 
       .mask {
@@ -32,32 +32,34 @@
 
       span {
         display: block;
-        color: v.$gray;
+        color: v.$gray-p;
         margin-top: 25px;
       }
       h2 {
         display: block;
         font-size: 20px;
-        color: v.$gray;
+        color: v.$white;
         margin-top: 5px;
         margin-bottom: 10px;
       }
       a {
-        color: v.$black;
+        color: v.$white;
         font-weight: bold;
-        text-shadow: 0px 0px 5px crimson;
         text-decoration: none;
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: v.$gray;
+        border-radius: .5rem;
+        padding: .3rem;
 
         &:hover {
-          color: v.$red;
-          text-shadow: none;
+          color: v.$gray-p;
+          padding: .3rem 2.5rem;
         }
       }
       h3 {
         display: block;
         font-size: 15px;
-        color: v.$gray;
+        color: v.$gray-p;
         margin-top: 0px;
         padding-top: 15px;
         border-top: 1px solid #ddd;
@@ -82,7 +84,7 @@
     color: v.$white;
     padding: .5rem;
     border-radius: 2rem;
-    background-color: v.$red;
+    background-color: v.$blue;
     transition: all .3s ease-in-out;
 
     &:hover {

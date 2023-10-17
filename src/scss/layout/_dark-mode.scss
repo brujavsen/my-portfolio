@@ -2,7 +2,9 @@
 @use '../abstracts/mixins' as m;
 
 .dark {
-    background-color: v.$grayDark;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(9, 9, 9) 90%, #b71435 100%);
+    min-height: 100vh;
     transition: all 1s ease-in-out;
 
     .dark-mode {
@@ -13,10 +15,17 @@
     .header {
         border-bottom: 3px solid v.$niceRed;
     }
+    #nav {
+        opacity: .9;
+        transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+        @include m.desktop {
+            background-color: v.$niceRed;
+        }
+    }
     .logo {
-        span {
+        a {
             transition: all .7s ease-in-out;
-            color: v.$white;
+            color: v.$niceRed;
         }
         h3 {
             transition: all .7s ease-in-out;
@@ -32,6 +41,13 @@
     .nav {
         a {
             color: v.$white;
+        }
+        .active, a:hover {
+            background-color: v.$niceRed;
+
+            @include m.desktop {
+                background-color: rgb(4, 4, 4);
+            }
         }
     }
     .icon {
@@ -53,11 +69,9 @@
     // HOME
     .home {
         h1 {
-            transition: all .7s ease-in-out;
             color: v.$niceWhite;
         }
         strong {
-            transition: all .7s ease-in-out;
             color: v.$niceRed;
         }
     
@@ -78,6 +92,19 @@
             transition: all .7s ease-in-out;
             color: v.$niceGray;
         }
+
+        .contact-wm {
+            background-color: v.$niceRed;
+            &:hover {
+                box-shadow: 0 0 30px v.$niceRed;
+            }
+        }
+        .resume-link {
+            background-color: v.$niceRed;
+            &:hover {
+                box-shadow: 0 0 30px v.$niceRed;
+            }
+        }
     }
 
     /* PORTFOLIO */
@@ -97,7 +124,7 @@
             }
             a {
                 transition: all .7s ease-in-out;
-                color: v.$niceRed;
+                color: v.$niceGray;
                 text-shadow: none;
                 &:hover {
                     color: v.$white;

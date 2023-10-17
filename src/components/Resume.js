@@ -127,7 +127,7 @@ const Resume = () => {
         </div>
         {/* Educacion */}
         <div className='fbasis education'>
-          <h2>Educación</h2>
+          <h2>Certificados</h2>
           <div>
             {data.length > 0 ? (
               data.map((about, index) => (

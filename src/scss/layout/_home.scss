@@ -8,33 +8,89 @@
     font-weight: 400;
     font-size: 50px;
     margin-top: 80px;
-
+    color: v.$gray-p;
+    transition: all .5s ease-in-out;
     @include m.desktop {
-      font-size: 40px;
+      font-size: 35px;
     }
   }
   strong {
-    color: v.$red;
+    color: v.$blue;
   }
 
   
   .title {
     font-size: 2rem;
-    color: v.$gray;
+    color: v.$blue;
     font-weight: 400;
-    a {
-      color: v.$red;
+  }
+  .contact-wm {
+    background-color: v.$blue;
+    color: v.$white;
+    display: block;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    margin: 4rem 0;
+    transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover {
+      box-shadow: 0 0 30px v.$blue;
+    }
+    &::after {
+      content: '>>>';
+      font-size: 1.5rem;
       font-weight: bold;
-      border-radius: 5px;
+      color: v.$white;
+      padding: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: 900ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    &:hover::after {
+      opacity: 1;
+      padding: 0 2rem;
+    }
+  }
+  .resume-link {
+    background-color: v.$blue;
+    color: v.$white;
+    display: block;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    margin: 4rem 0;
+    transition: 900ms cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover {
+      box-shadow: 0 0 30px v.$blue;
+    }
+    &::after {
+      content: '>>>';
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: v.$white;
+      padding: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: 900ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    &:hover::after {
+      opacity: 1;
+      padding: 0 2rem;
     }
   }
   .heading {
     margin-top: 10rem;
     font-size: 30px;
     font-weight: 500;
-    color: v.$black;
+    color: v.$white;
   }
   p {
-    color: #777;
+    color: v.$gray-p;
   }
 }
+
+@keyframes colorful {100%{filter: hue-rotate(360deg);}}

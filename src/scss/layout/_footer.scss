@@ -1,9 +1,12 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
 /* FOOTER */
 .footer {
     min-height: 100px;
     text-align: center;
     margin-top: 80px;
-    border-top: 3px solid crimson;
-    background-color: #f5f5f5;
-    color: #666;
+    border-top: 3px solid v.$white;
+    background-color: transparent;
+    color: v.$gray-p;
 }

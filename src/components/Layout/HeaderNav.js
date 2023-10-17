@@ -6,7 +6,7 @@ const HeaderNav = () => {
     return (
         <header className='header'>
             <div className='logo'>
-                <span>B</span>
+                <NavLink to='/inicio'>B</NavLink>
                 <h3>Bruno Sena DEV</h3>
                 <p className='eng-mode'>ENG (IN PROCESS)</p>
             </div>
@@ -24,7 +24,7 @@ const HeaderNav = () => {
 
                 {/* <NavLink style={{ '--i': 4 }}  to='/resources' className={({isActive}) => isActive ? "active" : ""}>Recursos</NavLink> */}
 
-                <NavLink style={{ '--i': 5 }}  to='/resume' className={({isActive}) => isActive ? "active" : ""}>Curriculum</NavLink>
+                {/* <NavLink style={{ '--i': 5 }}  to='/resume' className={({isActive}) => isActive ? "active" : ""}>Curriculum</NavLink> */}
 
                 <NavLink style={{ '--i': 6 }}  to='/contact' className={({isActive}) => isActive ? "active" : ""}>Contacto</NavLink>
 
