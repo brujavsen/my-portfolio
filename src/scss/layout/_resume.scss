@@ -5,6 +5,7 @@
 .resume-page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    color: v.$white;
 
     /* INFO BASIC */
     .info-basic {
@@ -20,7 +21,6 @@
           }
         }
         &:nth-child(2) {
-          color: v.$gray;
           font-size: 3.5rem;
           @include m.desktop {
             font-size: 3rem;
@@ -28,7 +28,6 @@
         }
       }
       p {
-        color: v.$gray;
         font-size: 2rem;
         @include m.desktop {
           font-size: 2.5rem;
@@ -57,7 +56,6 @@
         font-size: 3rem;
         text-transform: uppercase;
         background-color: v.$blue;
-        color: v.$white;
       }
       p {
         margin: 2rem;
@@ -92,7 +90,6 @@
         font-size: 3rem;
         text-align: center;
         background-color: v.$blue;
-        color: v.$white;
       }
       section{
         display: flex;
@@ -127,7 +124,6 @@
         font-size: 3rem;
         text-align: center;
         background-color: v.$blue;
-        color: v.$white;
       }
       section{
         display: flex;
@@ -153,7 +149,7 @@
           }
         }
         a {
-          color: v.$blue;
+          color: v.$yellow;
           font-weight: bold;
         }
       }

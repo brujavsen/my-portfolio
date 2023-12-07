@@ -33,7 +33,6 @@ const Contact = () => {
       {/* action='mailto:brudev97@gmail.com?subject=Asunto del correo&body=Cuerpo del mensaje'  */}
       <div className='contact-media'>
           <p><HiMail/> brudev97@gmail.com</p>
-          <p><HiOutlinePhone/> 095048957</p>
           <a href='https://www.linkedin.com/in/bruno-sena-webdev' target='_blank' rel='noreferrer'><BiLogoLinkedin/></a>
           <a href='https://github.com/brujavsen' target='_blank' rel='noreferrer'><BiLogoGithub/></a> 
       </div>

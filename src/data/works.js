@@ -49,4 +49,24 @@ export const works = [
         'image': 'project-5',
         'description': 'Un proyecto que utiliza una api de recetas para buscar recetas y colocar recetas como favoritas'
     },
+    {
+        'id': 'karatesite',
+        'name': 'Karate Tai Jitsu Sitio Web',
+        'nameEng': 'Karate Tai Jitsu Site',
+        'url': 'https://karate-tai-jitsu-web.vercel.app/',
+        'technology': 'REACT, SASS',
+        'category': 'Desarrollo Web',
+        'image': 'project-6',
+        'description': 'Un proyecto dirigido a una escuela de Karate, desarrollado con ReactJS'
+    },
+    {
+        'id': 'gimnasiosite',
+        'name': 'Gimnasio Gimbo Sitio Web',
+        'nameEng': 'Gimbo Gim Site',
+        'url': 'https://karate-tai-jitsu-web.vercel.app/',
+        'technology': 'REACT, SASS',
+        'category': 'Desarrollo Web',
+        'image': 'project-7',
+        'description': 'Un proyecto dirigido a un gimnasio, un sitio informativo estático. Desarrollado con ReactJS'
+    }
 ]
