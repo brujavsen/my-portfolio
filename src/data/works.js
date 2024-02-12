@@ -57,7 +57,7 @@ export const works = [
         'technology': 'REACT, SASS',
         'category': 'Desarrollo Web',
         'image': 'project-6',
-        'description': 'Un proyecto dirigido a una escuela de Karate, desarrollado con ReactJS'
+        'description': 'Un proyecto dirigido a una escuela de Karate, este proyecto continua en desarrollo, desarrollado con ReactJS'
     },
     {
         'id': 'gimnasiosite',
@@ -68,5 +68,15 @@ export const works = [
         'category': 'Desarrollo Web',
         'image': 'project-7',
         'description': 'Un proyecto dirigido a un gimnasio, un sitio informativo estático. Desarrollado con ReactJS'
+    },
+    {
+        'id': 'alineportfolio',
+        'name': 'Aline Cejas - Portafolio',
+        'nameEng': 'Aline Cejas - Portfolio',
+        'url': 'https://alinecejas.vercel.app/',
+        'technology': 'REACT, SASS',
+        'category': 'Desarrollo Web',
+        'image': 'project-8',
+        'description': 'Un proyecto portafolio, un sitio informativo estático. Desarrollado con ReactJS'
     }
 ]
