@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HiMail, HiOutlinePhone } from "react-icons/hi";
+import { HiMail } from "react-icons/hi";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
 
 const Contact = () => {
