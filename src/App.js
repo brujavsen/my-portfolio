@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='layout' ref={divLayout}>
-      <BiMoon className='dark-mode' onClick={handleDarkMode}/>
+      <BiMoon className='dark-mode' onClick={handleDarkMode} title='Dark Mode'/>
       <MainRoutes/>
     </div>
   );

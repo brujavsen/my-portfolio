@@ -17,20 +17,20 @@
           font-size: 3.5rem;
           @include m.desktop {
             color: v.$blue;
-            font-size: 3rem;
+            font-size: 2rem;
           }
         }
         &:nth-child(2) {
           font-size: 3.5rem;
           @include m.desktop {
-            font-size: 3rem;
+            font-size: 2rem;
           }
         }
       }
       p {
         font-size: 2rem;
         @include m.desktop {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
         }
       }
     }
@@ -43,7 +43,7 @@
       flex-direction: column;
 
       div {
-        box-shadow: 0px 0px 10px #eee;
+        box-shadow: 0px 0px 2px #eee;
         border-radius: 10px;
         width: 100%;
         height: fit-content;
@@ -56,11 +56,16 @@
         font-size: 3rem;
         text-transform: uppercase;
         background-color: v.$blue;
+        @include m.tablet {
+          font-size: 2rem;
+        }
       }
       p {
         margin: 2rem;
         font-size: 2.5rem;
-
+        @include m.tablet {
+          font-size: 2rem;
+        }
         &:nth-child(even) {
           color: v.$blue;
         }
@@ -69,10 +74,16 @@
       i {
         font-size: 5rem;
         margin: 1rem;
+        @include m.tablet {
+          font-size: 3.2rem;
+        }
       }
 
       .lang {
         font-size: 2.5rem;
+        @include m.tablet {
+          font-size: 1.8rem;
+        }
         display: block;
         font-weight: 600;
         span {
@@ -89,7 +100,12 @@
       h2 {
         font-size: 3rem;
         text-align: center;
+        text-transform: uppercase;
+        border-radius: 2rem;
         background-color: v.$blue;
+        @include m.tablet {
+          font-size: 2.5rem;
+        }
       }
       section{
         display: flex;
@@ -100,8 +116,9 @@
         }
       }
       .card {
-        box-shadow: 0px 0px 10px #eee;
+        box-shadow: 0px 0px 2px #eee;
         padding: 0 2rem;
+        border-radius: 5px;
         h3 {
           text-transform: uppercase;
           span {
@@ -113,6 +130,18 @@
           width: 120px;
           height: 100px;
         }
+        .desc-rol {
+          height: 200px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .expanded {
+          height: auto;
+          overflow: visible;
+        }
+        .btn-open-card {
+          font-size: 3rem;
+        }
       }
     }
     /* Education */
@@ -123,7 +152,12 @@
       h2 {
         font-size: 3rem;
         text-align: center;
+        text-transform: uppercase;
+        border-radius: 2rem;
         background-color: v.$blue;
+        @include m.tablet {
+          font-size: 2.5rem;
+        }
       }
       section{
         display: flex;
@@ -137,7 +171,7 @@
       .card {
         border-radius: 5px;
         padding: 1.3rem;
-        box-shadow: 0px 0px 10px v.$gray;
+        box-shadow: 0px 0px 2px #eee;
         p {
           &:nth-child(1) {
             font-size: 2rem;

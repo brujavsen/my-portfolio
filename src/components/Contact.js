@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { HiMail } from "react-icons/hi";
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
+import { LangContext } from '../Routes/MainRoutes';
 
 const Contact = () => {
-
+  const [lang, setLang] = useContext(LangContext);
   const [message, setMessage] = useState({});
 
   const getInfoMessage = e => {
@@ -22,13 +23,13 @@ const Contact = () => {
   return (
     <div className='page'>
 
-      <h1 className='heading'>Contacto</h1>
+      <h1 className='heading'>{lang ? 'Contact' : 'Contacto'}</h1>
 
       <form className='contact' action={`mailto:brudev97@gmail.com?subject=Hello, I'm ${message.name + ' ' + message.surname}&body=${message.description}`} onSubmit={getInfoMessage}>
-          <input type='text' name='name' placeholder='Nombre'/>
-          <input type='text' name='surname' placeholder='Apellido'/>
-          <textarea name='description' placeholder='Motivo de contacto...' />
-          <input type='submit' value="Enviar"/>
+          <input type='text' name='name' placeholder={lang ? 'Name' : 'Nombre'}/>
+          <input type='text' name='surname' placeholder={lang ? 'Surname' : 'Apellido'}/>
+          <textarea name='description' placeholder={lang ? 'Contact Reason...' : 'Motivo de Contacto...'} />
+          <input type='submit' value={lang ? 'Send' : 'Enviar'}/>
       </form>
       {/* action='mailto:brudev97@gmail.com?subject=Asunto del correo&body=Cuerpo del mensaje'  */}
       <div className='contact-media'>

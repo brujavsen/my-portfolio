@@ -94,15 +94,21 @@
       "languages": [
         {
           "name": "Inglés",
-          "level": "Competencia básica"
+          "nameEng": "English",
+          "level": "Competencia básica",
+          "levelEng": "Basic"
         },
         {
           "name": "Español",
-          "level": "Nativo"
+          "nameEng": "Spanish",
+          "level": "Nativo",
+          "levelEng": "Native"
         },
         {
           "name": "Portugués",
-          "level": "Competencia profesional completa"
+          "nameEng": "Portuguese",
+          "level": "Competencia profesional completa",
+          "levelEng": "Advanced"
         }
       ],
       "hardSkills": [
@@ -301,19 +307,19 @@
         {
           "skill": {
             "name": "Adaptabilidad al cambio",
-            "type": "practice"
+            "nameEng": "Adaptability to change"
           }
         },
         {
           "skill": {
             "name": "Resistencia a la frustración",
-            "type": "practice"
+            "nameEng": "Frustration Tolerance"
           }
         },
         {
           "skill": {
             "name": "Trabajo en equipo",
-            "type": "practice"
+            "nameEng": "Teamwork Skills"
           }
         }
       ]
