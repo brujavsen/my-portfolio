@@ -63,7 +63,7 @@ export const works = [
         'id': 'gimnasiosite',
         'name': 'Gimnasio Gimbo Sitio Web',
         'nameEng': 'Gimbo Gim Site',
-        'url': 'https://karate-tai-jitsu-web.vercel.app/',
+        'url': 'https://gimnasio-gimbo.vercel.app/',
         'technology': 'REACT, SASS',
         'category': 'Desarrollo Web',
         'image': 'project-6',
