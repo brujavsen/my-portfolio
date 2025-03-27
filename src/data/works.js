@@ -56,7 +56,7 @@ export const works = [
         'url': 'https://karate-tai-jitsu-web.vercel.app/',
         'technology': 'REACT, SASS',
         'category': 'Desarrollo Web',
-        'image': 'project-6',
+        'image': 'project-7',
         'description': 'Un proyecto dirigido a una escuela de Karate, este proyecto continua en desarrollo, desarrollado con ReactJS'
     },
     {
@@ -66,7 +66,7 @@ export const works = [
         'url': 'https://karate-tai-jitsu-web.vercel.app/',
         'technology': 'REACT, SASS',
         'category': 'Desarrollo Web',
-        'image': 'project-7',
+        'image': 'project-6',
         'description': 'Un proyecto dirigido a un gimnasio, un sitio informativo estático. Desarrollado con ReactJS'
     },
     {

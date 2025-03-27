@@ -110,7 +110,7 @@ const Resume = () => {
             )}
           </div>
         </div>
-        {/* Experiencias */}
+        {/* Experiencias
         <div className='fbasis exp-cnt'>
           <h2>{lang ? "Experience" : "Experiencia"}</h2>
           <div>
@@ -143,7 +143,7 @@ const Resume = () => {
               <div>Loading...</div>
             )}
           </div>
-        </div>
+        </div> */}
         {/* Educacion */}
         <div className='fbasis education'>
           <h2>{lang ? "Certificates" : "Certificados"}</h2>
