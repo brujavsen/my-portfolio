@@ -93,7 +93,7 @@ const Resume = () => {
             )}
           </div>
           {/* Habilidades Blandas */}
-          <div>
+          {/* <div>
             <h3>{lang ? "Soft Skills" : "Habilidades Blandas"}</h3>
             {data.length > 0 ? (
               data.map((about, index) => (
@@ -108,7 +108,7 @@ const Resume = () => {
             ) : (
               <div>Loading...</div>
             )}
-          </div>
+          </div> */}
         </div>
         {/* Experiencias
         <div className='fbasis exp-cnt'>
