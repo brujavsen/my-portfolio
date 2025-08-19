@@ -54,7 +54,7 @@ const Index = () => {
             
             <Link to="/contact" className='contact-wm'><BiAt/> {lang ? "Contact me" : "Contacta conmigo"}</Link>
 
-            <a className='resume-link' href={resumeLink} onClick={e => handleClick(e, resumeLink)}><BiBookOpen/> {lang ? "Resume" : "CV"}</a>
+            {/* <a className='resume-link' href={resumeLink} onClick={e => handleClick(e, resumeLink)}><BiBookOpen/> {lang ? "Resume" : "CV"}</a> */}
 
             <section className='lasts-works'>
                 <h2 className='heading'>{lang ? "Some projects" : "Algunos de mis proyectos"}</h2>
