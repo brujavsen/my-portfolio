@@ -1,0 +1,113 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+/* PORTFOLIO */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+
+    .work-item {
+      flex-basis: 25%;
+      flex-grow: 1;
+      box-shadow: 0px 0px 10px v.$gray-p;
+      margin: 10px;
+
+      &:hover img {
+          width: 150%;
+          margin-left: -80px;
+          filter: grayscale(0);
+      }
+      
+      .mask {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .info {
+        padding: 20px;
+      }
+
+      img {
+        width: 120%;
+        margin-left: -35px;
+        transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+        filter: grayscale(1);
+      }
+      .mask:hover img {
+        width: 150%;
+        margin-left: -80px;
+        filter: grayscale(0);
+      }
+
+      span {
+        display: block;
+        color: v.$black;
+        margin-top: 25px;
+      }
+      h2 {
+        display: block;
+        font-size: 20px;
+        color: v.$black;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      a {
+        color: v.$white;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: v.$gray;
+        border-radius: .5rem;
+        padding: .3rem;
+
+        &:hover {
+          color: v.$gray-p;
+          padding: .3rem 2.5rem;
+          
+        }
+      }
+      h3 {
+        display: block;
+        font-size: 15px;
+        color: v.$black;
+        margin-top: 0px;
+        padding-top: 15px;
+        border-top: 1px solid #ddd;
+      }
+    }
+}
+
+/* ONLY ONE PROJECT */
+.page-work .mask {
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #ddd;
+  
+  h1 {
+    color: v.$black;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.page-work {
+  h1 {
+    color: v.$black;
+  }
+  a {
+    color: v.$white;
+    padding: .5rem;
+    border-radius: 2rem;
+    background-color: v.$black;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      padding: .5rem 2rem;
+    }
+  }
+  p {
+    color: v.$black;
+  }
+}

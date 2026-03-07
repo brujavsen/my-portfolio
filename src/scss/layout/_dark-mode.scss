@@ -1,0 +1,275 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.dark {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(9, 9, 9) 95%, #ffffff 100%);
+    min-height: 100vh;
+    transition: all 1s ease-in-out;
+
+    .dark-mode {
+        transition: all .7s ease-in-out;
+        background-color: v.$white;
+        color: v.$black;
+    }
+    .header {
+        border-bottom: 3px solid v.$white;
+    }
+    #nav {
+        opacity: .9;
+        transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+        @include m.desktop {
+            background-color: v.$niceRed;
+        }
+    }
+    .logo {
+        a {
+            transition: all .7s ease-in-out;
+            color: v.$white;
+        }
+        h3 {
+            transition: all .7s ease-in-out;
+            color: v.$white;
+        }
+    }
+    /* HEADER & NAV */
+    .eng-mode {
+        transition: all .7s ease-in-out;
+        color: v.$black;
+        background-color: v.$white;
+    }
+    // NAV
+    .nav {
+        a {
+            color: v.$white;
+        }
+        .active, a:hover {
+            background-color: v.$white;
+            color: v.$black;
+
+            @include m.desktop {
+                background-color: rgb(4, 4, 4);
+            }
+        }
+    }
+    .icon {
+        transition: all .7s ease-in-out;
+        color: v.$white;
+    }
+    .page .heading {
+        transition: all .7s ease-in-out;
+        color: v.$white;
+    }
+
+    // Footer
+    .footer {
+        border-top: 3px solid v.$white;
+        background-color: transparent;
+        color: v.$white;
+    }
+
+    // HOME
+    .home {
+        h1 {
+            color: v.$niceWhite;
+        }
+        strong {
+            color: v.$white;
+        }
+    
+        
+        .title {
+            transition: all .7s ease-in-out;
+            color: v.$niceGray;
+        a {
+            transition: all .7s ease-in-out;
+            color: v.$white;
+        }
+        }
+        .heading {
+            transition: all .7s ease-in-out;
+            color: v.$niceGray;
+        }
+        p {
+            transition: all .7s ease-in-out;
+            color: v.$niceGray;
+        }
+
+        .contact-wm {
+            background-color: v.$niceRed;
+            &:hover {
+                box-shadow: 0 0 30px v.$white;
+            }
+        }
+        .resume-link {
+            background-color: v.$white;
+            &:hover {
+                box-shadow: 0 0 30px v.$white;
+            }
+        }
+    }
+
+    /* PORTFOLIO */
+    .works {
+
+        .work-item {
+            transition: all .7s ease-in-out;
+            box-shadow: 0 0 2px #777;
+
+            span {
+                transition: all .7s ease-in-out;
+                color: v.$niceGray;
+            }
+            h2 {
+                transition: all .7s ease-in-out;
+                color: v.$niceGray;
+            }
+            a {
+                transition: all .7s ease-in-out;
+                color: v.$niceGray;
+                text-shadow: none;
+                &:hover {
+                    color: v.$white;
+                }
+            }
+            h3 {
+                transition: all .7s ease-in-out;
+                color: v.$niceWhite;
+                border-top: 1px solid v.$white;
+            }
+        }
+    }
+
+    /* ONLY ONE PROJECT */
+    .page-work {
+        transition: all .7s ease-in-out;
+        color: v.$niceWhite;
+        
+        a {
+            transition: all .3s ease-in-out;
+            color: v.$white;
+            font-weight: bold;
+            background-color: v.$niceWhite;
+        }
+    }
+
+    /* RESUME */
+    .resume-page {
+
+        /* INFO BASIC */
+        .info-basic {
+
+            h2 {
+                &:nth-child(1) {
+                    color: v.$white;
+                }
+                &:nth-child(2) {
+                    color: v.$niceGray;
+                }
+            }
+            p {
+                color: v.$niceGray;
+            }
+        }
+        
+        /* Know */
+        .know-cnt{
+            div {
+                box-shadow: 0px 0px 3px v.$niceGray;
+            }
+            h3 {
+                background-color: v.$white;
+                color: v.$black;
+            }
+            p {
+                color: v.$niceWhite;
+                &:nth-child(even) {
+                    color: v.$white;
+                }
+            }
+
+            i {
+                color: v.$niceWhite;
+            }
+
+            .lang {
+                font-size: 2.5rem;
+                display: block;
+                font-weight: 600;
+                span {
+                font-weight: 300;
+                }
+            }
+        }
+
+        /* Experiencia */
+        .exp-cnt {
+        
+            h2 {
+                background-color: v.$white;
+                color: v.$niceWhite;
+            }
+            .card {
+                box-shadow: 0px 0px 3px v.$niceGray;
+                h3 {
+                    transition: all .3s ease-in-out;
+                    color: v.$white;
+                    span {
+                        transition: all .3s ease-in-out;
+                        color: v.$niceGray;
+                    }
+                }
+                span {
+                    transition: all .3s ease-in-out;
+                    color: v.$niceGray;
+                }
+                time {
+                    transition: all .3s ease-in-out;
+                    color: v.$niceGray;
+                }
+                p {
+                    transition: all .3s ease-in-out;
+                    color: v.$niceGray;
+                }
+            }
+        }
+        /* Education */
+        .education {
+            h2 {
+                transition: all .3s ease-in-out;
+                background-color: v.$white;
+                color: v.$black;
+            }
+            .card {
+                box-shadow: 0px 0px 3px v.$niceGray;
+                p {
+                    color: v.$niceGray;
+                }
+                a {
+                    color: v.$white;
+                }
+            }
+        }
+    }
+
+    /* CONTACT */
+    input[type="submit"],
+    button {
+        color: v.$niceWhite;
+        background-color: v.$white;
+    }
+    .contact-media h2 {
+        color: v.$white;
+    }
+    .contact-media {
+        p {
+            color: v.$niceGray;
+        }
+    }
+    .contact-media a {
+        color: v.$niceGray;
+    }
+    .contact-media a:hover {
+        color: v.$white;
+    }
+}

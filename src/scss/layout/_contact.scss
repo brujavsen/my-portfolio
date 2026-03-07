@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+/* CONTACT */
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  padding: 15px;
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  transition: .5s ease-in-out;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px v.$black;
+  }
+}
+input[type="submit"],
+button {
+  border: none;
+  font-size: 15px;
+  padding: 15px;
+  margin-top: 15px;
+  color: v.$white;
+  border-radius: 5px;
+  background-color: v.$black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: rgb(142, 142, 142);
+}
+
+.contact-media h2 {
+  color: v.$black;
+}
+.contact-media p {
+  color: v.$black;
+}
+.contact-media a {
+  color: v.$black;
+  font-size: 2.5rem;
+  margin: 0 1rem;
+  transition: .3s ease-in;
+}
+.contact-media a:hover {
+  font-size: 2.8rem;
+  color: v.$gray;
+}
