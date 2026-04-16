@@ -1,9 +1,9 @@
 import { Fragment, useEffect, useState, useContext } from 'react'
-import { BiLogoHtml5, BiLogoBootstrap, BiLogoCss3, BiLogoTailwindCss, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoReact, BiCaretDownCircle, BiCaretUpCircle } from "react-icons/bi";
+import { BiLogoHtml5, BiLogoBootstrap, BiLogoCss3, BiLogoTailwindCss, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoReact } from "react-icons/bi";
 import { LangContext } from '../Routes/MainRoutes';
 
 const Resume = () => {
-  const [lang, setLang] = useContext(LangContext);
+  const [lang] = useContext(LangContext);
   const [data, setData] = useState({});
 
   async function fetchResume () {
@@ -38,7 +38,7 @@ const Resume = () => {
           {data.length > 0 ? (
             data.map((about, index) => (
               <Fragment key={index}>
-                <h2>{about.aboutMe.profile.title}</h2>
+                <h2>{lang ? (about.aboutMe.profile.titleEng || about.aboutMe.profile.title) : about.aboutMe.profile.title}</h2>
                 <h2>{about.aboutMe.profile.name} {about.aboutMe.profile.surnames}</h2>
                 <p>{lang ? about.aboutMe.profile.descriptionEng : about.aboutMe.profile.description}</p>
               </Fragment>
@@ -139,10 +139,10 @@ const Resume = () => {
                 <section key={index}>
                   {about.knowledge.studies.map((study, index) => (
                     <div className='card' key={index}>
-                      <p>{study.name}</p>
-                      <p>Institución: {study.institution.name}</p>
-                      <p>Fecha: {study.startDate}</p>
-                      <a href={study.institution.URL} target='_blank' rel='noreferrer'>Certificado</a>
+                      <p>{lang ? (study.nameEng || study.name) : study.name}</p>
+                      <p>{lang ? 'Institution' : 'Institución'}: {study.institution.name}</p>
+                      <p>{lang ? 'Date' : 'Fecha'}: {study.startDate}</p>
+                      {study.institution.URL && <a href={study.institution.URL} target='_blank' rel='noreferrer'>{lang ? 'View certificate' : 'Ver certificado'}</a>}
                     </div>
                   ))}
                 </section>

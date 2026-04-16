@@ -6,7 +6,21 @@
     min-height: 100px;
     text-align: center;
     margin-top: 80px;
-    border-top: 3px solid v.$black;
+    border-top: 3px solid v.$primary;
     background-color: transparent;
-    color: v.$black;
+    color: v.$primary;
+    padding: 2rem 0;
+
+    .footer-links {
+        margin-bottom: 1rem;
+        a {
+            font-size: 2.5rem;
+            color: v.$primary;
+            margin: 0 1rem;
+            transition: .3s ease;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
 }

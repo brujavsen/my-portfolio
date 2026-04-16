@@ -5,7 +5,7 @@
 .resume-page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    color: v.$black;
+    color: v.$primary;
 
     /* INFO BASIC */
     .info-basic {
@@ -13,10 +13,10 @@
 
       h2 {
         &:nth-child(1) {
-          color: v.$black;
+          color: v.$primary;
           font-size: 3.5rem;
           @include m.desktop {
-            color: v.$black;
+            color: v.$primary;
             font-size: 2rem;
           }
         }
@@ -56,7 +56,7 @@
         font-size: 3rem;
         text-transform: uppercase;
         color: v.$white;
-        background-color: v.$black;
+        background-color: v.$primary;
         @include m.tablet {
           font-size: 2rem;
         }
@@ -68,7 +68,7 @@
           font-size: 2rem;
         }
         &:nth-child(even) {
-          color: v.$black;
+          color: v.$primary;
         }
       }
 
@@ -103,7 +103,7 @@
         text-align: center;
         text-transform: uppercase;
         border-radius: 2rem;
-        background-color: v.$black;
+        background-color: v.$primary;
         @include m.tablet {
           font-size: 2.5rem;
         }
@@ -154,7 +154,7 @@
         font-size: 3rem;
         text-align: center;
         text-transform: uppercase;
-        background-color: v.$black;
+        background-color: v.$primary;
         color: v.$white;
         @include m.tablet {
           font-size: 2.5rem;
@@ -184,7 +184,7 @@
           }
         }
         a {
-          color: v.$yellow;
+          color: v.$accent;
           font-weight: bold;
         }
       }

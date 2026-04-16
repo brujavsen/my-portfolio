@@ -9,9 +9,10 @@
       "profile": {
         "name": "Bruno",
         "surnames": "Sena",
-        "title": "Programador Jr Front-End",
-        "description": "Desarrollador web Front-End.\n\nAdoro los desafíos con interés de aprender. Perseverante y proactivo, con capacidad de adaptabilidad y trabajo en equipo. Con la iniciativa de ampliar mis conocimientos y seguir desarrollando todo lo aprendido.",
-        "descriptionEng":"FrontEnd web developer.\n\nI love challenges with an interest in learning. Persevering and proactive, with the capacity for adaptability and teamwork. With the initiative to expand my knowledge and continue developing everything I have learned.",
+        "title": "Desarrollador Frontend",
+        "titleEng": "Frontend Developer",
+        "description": "Desarrollador Frontend con foco en React, JavaScript y SASS. Construyo productos web reales — desde sitios para clientes hasta plataformas en desarrollo activo. Finalista en Fondos NODO 2025 con el proyecto HandUbe. Experiencia previa en QA y análisis en Arbusta para Mercado Libre.",
+        "descriptionEng": "Frontend Developer focused on React, JavaScript, and SASS. I build real web products — from client websites to platforms in active development. Finalist at Fondos NODO 2025 with the HandUbe project. Previous experience in QA and analysis at Arbusta for Mercado Libre.",
         "location": {
           "notes": "Autocompleted using Google Maps API (id: ChIJQSRS0s0uoJURhHVDviii1xk)",
           "country": "Uruguay",
@@ -165,141 +166,54 @@
         {
           "studyType": "certification",
           "degreeAchieved": false,
-          "name": "Build a Web Page with HTML and CSS",
-          "startDate": "2023-08-01",
-          "institution": {
-            "name": "Coursera",
-            "URL": "https://coursera.org/share/0bc0421224639fb1715ae43162e9f028"
-          },
-          "linkedCompetences": [
-            {
-              "name": "Bootstrap",
-              "type": "technology"
-            },
-            {
-              "name": "CSS",
-              "type": "technology"
-            },
-            {
-              "name": "HTML",
-              "type": "technology"
-            }
-          ]
-        },
-        {
-          "studyType": "certification",
-          "degreeAchieved": false,
-          "name": "Curso JavaScript Moderno",
+          "name": "JavaScript Moderno — 20+ Proyectos",
+          "nameEng": "Modern JavaScript — 20+ Projects",
           "startDate": "2023-07-01",
           "institution": {
             "name": "Udemy",
-            "description": "El curso cuenta con 20+ proyectos. Enseñando fundamentos desde básico hasta avanzando en JavaScript e implementa otras tecnologías como Node.Js, Vue.Js, React, Express, entre otros.",
-            "URL": "https://www.udemy.com/certificate/UC-38ce03f6-b5c7-44d8-ad28-0ca63bd903c5/",
-            "image": {
-              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/65cf2ab1-a7b4-4186-99a7-3d7c4baee8be_certificado-dw-bruno.jpg",
-              "alt": "certificado-dw-bruno.jpg"
-            }
-          },
-          "linkedCompetences": [
-            {
-              "name": "CSS",
-              "type": "technology"
-            },
-            {
-              "name": "Cypress",
-              "type": "technology"
-            },
-            {
-              "name": "Express",
-              "type": "technology"
-            },
-            {
-              "name": "HTML",
-              "type": "technology"
-            },
-            {
-              "name": "JavaScript",
-              "type": "technology"
-            },
-            {
-              "name": "Jest",
-              "type": "technology"
-            },
-            {
-              "name": "MongoDB",
-              "type": "technology"
-            },
-            {
-              "name": "NodeJS",
-              "type": "technology"
-            },
-            {
-              "name": "React",
-              "type": "technology"
-            },
-            {
-              "name": "Tailwind",
-              "type": "technology"
-            },
-            {
-              "name": "Vue",
-              "type": "technology"
-            }
-          ]
-        },
-        {
-          "studyType": "certification",
-          "degreeAchieved": false,
-          "name": "Fundamentos y técnicas de testing",
-          "startDate": "2022-07-01",
-          "institution": {
-            "name": "Quassure",
-            "image": {
-              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/5f5aca3d-d554-473f-a59d-8c9a628450f1_certificado.png",
-              "alt": "certificado.png"
-            }
+            "URL": "https://www.udemy.com/certificate/UC-38ce03f6-b5c7-44d8-ad28-0ca63bd903c5/"
           }
         },
         {
           "studyType": "certification",
           "degreeAchieved": false,
           "name": "JavaScript for Web Development",
+          "nameEng": "JavaScript for Web Development",
           "startDate": "2023-09-01",
           "institution": {
             "name": "Coursera",
             "URL": "https://coursera.org/share/b81b2d281ab320f1720ac6801098a064"
-          },
-          "linkedCompetences": [
-            {
-              "name": "CSS",
-              "type": "technology"
-            },
-            {
-              "name": "HTML",
-              "type": "technology"
-            },
-            {
-              "name": "JavaScript",
-              "type": "technology"
-            },
-            {
-              "name": "jQuery",
-              "type": "technology"
-            }
-          ]
+          }
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "Build a Web Page with HTML and CSS",
+          "nameEng": "Build a Web Page with HTML and CSS",
+          "startDate": "2023-08-01",
+          "institution": {
+            "name": "Coursera",
+            "URL": "https://coursera.org/share/0bc0421224639fb1715ae43162e9f028"
+          }
         },
         {
           "studyType": "certification",
           "degreeAchieved": false,
           "name": "Testing QA Manual",
+          "nameEng": "Manual QA Testing",
           "startDate": "2022-09-01",
           "institution": {
-            "name": "Coderhouse",
-            "description": "Pruebas exploratorias, pruebas funcionales, ejecución de pruebas, pruebas manuales, casos de pruebas, entre otros.",
-            "image": {
-              "link": "https://media-asgard.s3.eu-west-1.amazonaws.com/23/08/01/761bd941-6e87-4eb9-a64a-47cf5cac342b_certificado-testing.png",
-              "alt": "certificado-testing.png"
-            }
+            "name": "Coderhouse"
+          }
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "Fundamentos y técnicas de testing",
+          "nameEng": "Testing Fundamentals and Techniques",
+          "startDate": "2022-07-01",
+          "institution": {
+            "name": "Quassure"
           }
         }
       ],

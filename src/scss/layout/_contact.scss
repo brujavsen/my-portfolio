@@ -14,7 +14,7 @@ textarea {
   transition: .5s ease-in-out;
   &:focus {
     outline: none;
-    box-shadow: 0 0 10px v.$black;
+    box-shadow: 0 0 10px v.$primary;
   }
 }
 input[type="submit"],
@@ -25,7 +25,7 @@ button {
   margin-top: 15px;
   color: v.$white;
   border-radius: 5px;
-  background-color: v.$black;
+  background-color: v.$primary;
   text-decoration: none;
   cursor: pointer;
   transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -33,22 +33,23 @@ button {
 
 input[type="submit"]:hover,
 button:hover {
-  background-color: rgb(142, 142, 142);
+  background-color: v.$accent;
+  color: v.$primary;
 }
 
 .contact-media h2 {
-  color: v.$black;
+  color: v.$primary;
 }
 .contact-media p {
-  color: v.$black;
+  color: v.$primary;
 }
 .contact-media a {
-  color: v.$black;
+  color: v.$primary;
   font-size: 2.5rem;
   margin: 0 1rem;
   transition: .3s ease-in;
 }
 .contact-media a:hover {
   font-size: 2.8rem;
-  color: v.$gray;
+  color: v.$accent;
 }

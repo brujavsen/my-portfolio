@@ -20,15 +20,11 @@ const HeaderNav = () => {
             <nav className='nav' id='nav'>
                 <NavLink style={{ '--i': 1 }} to='/inicio' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Home' : 'Inicio'}</NavLink>
 
-                <NavLink style={{ '--i': 2 }}  to='/portfolio' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Portfolio' : 'Portafolio'}</NavLink>
+                <NavLink style={{ '--i': 2 }}  to='/portfolio' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Projects' : 'Proyectos'}</NavLink>
 
-                {/* <NavLink style={{ '--i': 3 }}  to='/services' className={({isActive}) => isActive ? "active" : ""}>Services</NavLink> */}
+                <NavLink style={{ '--i': 3 }}  to='/resume' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Resume' : 'Curriculum'}</NavLink>
 
-                {/* <NavLink style={{ '--i': 4 }}  to='/resources' className={({isActive}) => isActive ? "active" : ""}>Recursos</NavLink> */}
-
-                <NavLink style={{ '--i': 5 }}  to='/resume' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Resume' : 'Curriculum'}</NavLink>
-
-                <NavLink style={{ '--i': 6 }}  to='/contact' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Contact' : 'Contacto'}</NavLink>
+                <NavLink style={{ '--i': 4 }}  to='/contact' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Contact' : 'Contacto'}</NavLink>
 
             </nav>
         </header>

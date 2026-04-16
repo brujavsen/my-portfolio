@@ -2,8 +2,8 @@
 @use '../abstracts/mixins' as m;
 
 .dark {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgb(9, 9, 9) 95%, #ffffff 100%);
+    background: v.$black;
+    background: linear-gradient(180deg, v.$black 95%, v.$white 100%);
     min-height: 100vh;
     transition: all 1s ease-in-out;
 
@@ -12,6 +12,8 @@
         background-color: v.$white;
         color: v.$black;
     }
+
+    // HEADER & NAV
     .header {
         border-bottom: 3px solid v.$white;
     }
@@ -19,26 +21,20 @@
         opacity: .9;
         transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
         @include m.desktop {
-            background-color: v.$niceRed;
+            background-color: v.$black;
         }
     }
     .logo {
-        a {
-            transition: all .7s ease-in-out;
-            color: v.$white;
-        }
-        h3 {
+        a, h3 {
             transition: all .7s ease-in-out;
             color: v.$white;
         }
     }
-    /* HEADER & NAV */
     .eng-mode {
         transition: all .7s ease-in-out;
         color: v.$black;
         background-color: v.$white;
     }
-    // NAV
     .nav {
         a {
             color: v.$white;
@@ -46,9 +42,9 @@
         .active, a:hover {
             background-color: v.$white;
             color: v.$black;
-
             @include m.desktop {
-                background-color: rgb(4, 4, 4);
+                background-color: v.$white;
+                color: v.$black;
             }
         }
     }
@@ -61,179 +57,164 @@
         color: v.$white;
     }
 
-    // Footer
+    // FOOTER
     .footer {
         border-top: 3px solid v.$white;
         background-color: transparent;
         color: v.$white;
+        .footer-links a {
+            color: v.$white;
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 
     // HOME
     .home {
-        h1 {
-            color: v.$niceWhite;
-        }
-        strong {
+        h1, strong, .heading, p {
+            transition: all .7s ease-in-out;
             color: v.$white;
         }
-    
-        
         .title {
             transition: all .7s ease-in-out;
-            color: v.$niceGray;
-        a {
-            transition: all .7s ease-in-out;
+            color: rgba(255,255,255,0.7);
+        }
+        .tag {
+            background-color: rgba(255,255,255,0.1);
             color: v.$white;
         }
-        }
-        .heading {
-            transition: all .7s ease-in-out;
-            color: v.$niceGray;
-        }
-        p {
-            transition: all .7s ease-in-out;
-            color: v.$niceGray;
-        }
-
         .contact-wm {
-            background-color: v.$niceRed;
+            background-color: v.$white;
+            color: v.$black;
             &:hover {
-                box-shadow: 0 0 30px v.$white;
+                box-shadow: 0 0 30px rgba(255,255,255,0.15);
             }
         }
-        .resume-link {
-            background-color: v.$white;
+        .cta-group .secondary {
+            color: v.$white;
+            border-color: v.$white;
             &:hover {
-                box-shadow: 0 0 30px v.$white;
+                background-color: v.$white;
+                color: v.$black;
             }
         }
     }
 
-    /* PORTFOLIO */
-    .works {
+    // ACHIEVEMENTS
+    .achievements {
+        .achievements-heading {
+            color: v.$white;
+        }
+        .achievement-card {
+            border-color: rgba(255,255,255,0.15);
+            &:hover {
+                box-shadow: 0 4px 20px rgba(255,255,255,0.05);
+            }
+            .achievement-icon {
+                color: v.$white;
+            }
+            h3 {
+                color: v.$white;
+            }
+            p {
+                color: rgba(255,255,255,0.7);
+            }
+        }
+    }
 
+    // PORTFOLIO
+    .works {
         .work-item {
             transition: all .7s ease-in-out;
-            box-shadow: 0 0 2px #777;
+            box-shadow: 0 0 2px rgba(255,255,255,0.2);
 
-            span {
+            span, h2 {
                 transition: all .7s ease-in-out;
-                color: v.$niceGray;
+                color: v.$white;
             }
-            h2 {
-                transition: all .7s ease-in-out;
-                color: v.$niceGray;
+            .status-badge {
+                background-color: rgba(255,255,255,0.1);
+                color: v.$white;
             }
             a {
                 transition: all .7s ease-in-out;
-                color: v.$niceGray;
-                text-shadow: none;
+                color: v.$black;
+                background-color: v.$white;
                 &:hover {
-                    color: v.$white;
+                    color: v.$black;
                 }
             }
             h3 {
                 transition: all .7s ease-in-out;
-                color: v.$niceWhite;
-                border-top: 1px solid v.$white;
+                color: rgba(255,255,255,0.7);
+                border-top: 1px solid rgba(255,255,255,0.15);
             }
         }
     }
 
-    /* ONLY ONE PROJECT */
+    // SINGLE PROJECT
     .page-work {
         transition: all .7s ease-in-out;
-        color: v.$niceWhite;
-        
+        color: v.$white;
+
+        .project-status {
+            background-color: rgba(255,255,255,0.1);
+            color: v.$white;
+        }
+        h1 {
+            color: v.$white;
+        }
         a {
             transition: all .3s ease-in-out;
-            color: v.$white;
-            font-weight: bold;
-            background-color: v.$niceWhite;
+            color: v.$black;
+            background-color: v.$white;
+        }
+        p {
+            color: rgba(255,255,255,0.7);
         }
     }
 
-    /* RESUME */
+    // RESUME
     .resume-page {
+        color: v.$white;
 
-        /* INFO BASIC */
         .info-basic {
-
             h2 {
-                &:nth-child(1) {
-                    color: v.$white;
-                }
-                &:nth-child(2) {
-                    color: v.$niceGray;
-                }
+                color: v.$white;
             }
             p {
-                color: v.$niceGray;
+                color: rgba(255,255,255,0.7);
             }
         }
-        
-        /* Know */
-        .know-cnt{
+
+        .know-cnt {
             div {
-                box-shadow: 0px 0px 3px v.$niceGray;
+                box-shadow: 0px 0px 3px rgba(255,255,255,0.15);
             }
             h3 {
                 background-color: v.$white;
                 color: v.$black;
             }
-            p {
-                color: v.$niceWhite;
-                &:nth-child(even) {
-                    color: v.$white;
-                }
-            }
-
-            i {
-                color: v.$niceWhite;
-            }
-
-            .lang {
-                font-size: 2.5rem;
-                display: block;
-                font-weight: 600;
-                span {
-                font-weight: 300;
-                }
+            p, i {
+                color: v.$white;
             }
         }
 
-        /* Experiencia */
         .exp-cnt {
-        
             h2 {
                 background-color: v.$white;
-                color: v.$niceWhite;
+                color: v.$black;
             }
             .card {
-                box-shadow: 0px 0px 3px v.$niceGray;
-                h3 {
-                    transition: all .3s ease-in-out;
+                box-shadow: 0px 0px 3px rgba(255,255,255,0.15);
+                h3, span, time, p {
                     color: v.$white;
-                    span {
-                        transition: all .3s ease-in-out;
-                        color: v.$niceGray;
-                    }
-                }
-                span {
-                    transition: all .3s ease-in-out;
-                    color: v.$niceGray;
-                }
-                time {
-                    transition: all .3s ease-in-out;
-                    color: v.$niceGray;
-                }
-                p {
-                    transition: all .3s ease-in-out;
-                    color: v.$niceGray;
                 }
             }
         }
-        /* Education */
+
         .education {
             h2 {
                 transition: all .3s ease-in-out;
@@ -241,9 +222,9 @@
                 color: v.$black;
             }
             .card {
-                box-shadow: 0px 0px 3px v.$niceGray;
+                box-shadow: 0px 0px 3px rgba(255,255,255,0.15);
                 p {
-                    color: v.$niceGray;
+                    color: v.$white;
                 }
                 a {
                     color: v.$white;
@@ -252,24 +233,24 @@
         }
     }
 
-    /* CONTACT */
+    // CONTACT
     input[type="submit"],
     button {
-        color: v.$niceWhite;
+        color: v.$black;
         background-color: v.$white;
     }
     .contact-media h2 {
         color: v.$white;
     }
-    .contact-media {
-        p {
-            color: v.$niceGray;
-        }
+    .contact-media p {
+        color: rgba(255,255,255,0.7);
     }
     .contact-media a {
-        color: v.$niceGray;
+        color: v.$white;
+        opacity: 0.7;
     }
     .contact-media a:hover {
         color: v.$white;
+        opacity: 1;
     }
 }

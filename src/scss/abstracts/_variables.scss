@@ -3,19 +3,16 @@
 //Font
 $font-p: 'Poppins', sans-serif;
 
-//Colores
-$black: #000;
-$yellow: #FCC861;
-$blue: #3A98B9;
+//Colores Light Mode
+$primary: #0A4A3C;
+$accent: #F2B759;
+$accent-light: rgba(242, 183, 89, 0.15);
 $white: #FFF;
-$gray: #4d4c4c;
+$gray: #3d6b60;
 $gray-p: #d2d2d2;
 
-//COLORS DARK MODE
-$grayDark: #161616;
-$niceWhite: #c7c7c7;
-$niceRed: #b71435;
-$niceGray: #949292;
+//Colores Dark Mode
+$black: #000;
 
 //Tamaños de Media Queries
 $telefono: 480px;
