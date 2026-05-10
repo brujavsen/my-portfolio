@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
 import ListWorks from './ListWorks'
 import Achievements from './Achievements'
 import { BiAt, BiRightArrowAlt } from "react-icons/bi";
@@ -7,6 +6,14 @@ import { LangContext } from '../Routes/MainRoutes';
 
 const Index = () => {
     const [lang] = useContext(LangContext);
+
+    const handleScroll = (e, targetId) => {
+        e.preventDefault();
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <div className='home'>
@@ -37,18 +44,18 @@ const Index = () => {
             </h2>
 
             <div className='cta-group'>
-                <Link to="/portfolio" className='contact-wm'><BiRightArrowAlt/> {lang ? "See my work" : "Ver proyectos"}</Link>
-                <Link to="/contact" className='contact-wm secondary'><BiAt/> {lang ? "Get in touch" : "Contacto"}</Link>
+                <a href="#portfolio" onClick={(e) => handleScroll(e, 'portfolio')} className='contact-wm'><BiRightArrowAlt/> {lang ? "See my work" : "Ver proyectos"}</a>
+                <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className='contact-wm secondary'><BiAt/> {lang ? "Get in touch" : "Contacto"}</a>
             </div>
 
             <Achievements />
 
-            <section className='lasts-works'>
+            {/* <section className='lasts-works'>
                 <h2 className='heading'>{lang ? "Featured Projects" : "Proyectos Destacados"}</h2>
                 <p>{lang ? "Real products, not just exercises" : "Productos reales, no solo ejercicios"}</p>
 
                 <ListWorks limit="4"/>
-            </section>
+            </section> */}
         </div>
     )
 }

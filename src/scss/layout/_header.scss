@@ -6,10 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 132px;
-    border-bottom: 3px solid v.$primary;
-    margin-bottom: 35px;
-    color: v.$primary;
+    height: 80px;
+    border-bottom: 1px solid v.$gray;
+    margin-bottom: 40px;
+    color: v.$black;
 
     .logo {
         flex-grow: 2;
@@ -18,26 +18,36 @@
         
         a {
             display: block;
-            font-size: 90px;
-            margin-top: -8px;
-            font-weight: bolder;
-            color: v.$primary;
+            font-size: 48px;
+            font-weight: 700;
+            color: v.$black;
+            text-decoration: none;
         }
         h3 {
             display: block;
             flex-basis: 40px;
-            margin-left: 10px;
-            font-weight: 300;
-            text-transform: uppercase;
+            margin-left: 15px;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: v.$black;
         }
     }
 
     .eng-mode {
-        background-color: v.$primary;
-        color: v.$white;
-        margin: 2rem;
-        font-size: 1.5rem;
-        padding: .5rem;
+        background-color: transparent;
+        color: v.$black;
+        border: 1px solid v.$black;
+        margin: 1rem;
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background-color: v.$black;
+            color: v.$white;
+        }
     }
 
     // NAV
@@ -47,14 +57,14 @@
         justify-content: flex-end;
         align-items: center;
         list-style: none;
-        height: 132px;
+        height: 80px;
         a {
-            text-transform: uppercase;
+            text-transform: none;
             font-weight: 500;
-            font-size: 16px;
-            margin: 0 15px;
-            color: v.$primary;
-            transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+            font-size: 1.6rem;
+            margin: 0 20px;
+            color: v.$black;
+            transition: all 0.3s ease;
         
             @include m.desktop {
                 font-size: 2rem;
@@ -65,18 +75,10 @@
             }
         }
         .active, a:hover {
-            font-weight: bold;
-            padding: 0.3rem;
-            border-radius: 5px;
-            color: v.$white;
-            background-color: v.$primary;
+            color: v.$primary;
 
             @include m.desktop {
-                font-weight: bold;
-                padding: 0.1rem 2rem;
-                border-radius: 5px;
-                color: v.$white;
-                background-color: v.$primary;
+                color: v.$primary;
             }
         }
 

@@ -1,14 +1,22 @@
 import React, { useContext } from 'react'
-import { NavLink } from 'react-router-dom'
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
 import { LangContext } from '../../Routes/MainRoutes';
 
 const HeaderNav = () => {
     const [lang, setLang] = useContext(LangContext);
+    
+    const handleScroll = (e, targetId) => {
+        e.preventDefault();
+        const element = document.getElementById(targetId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <header className='header'>
             <div className='logo'>
-                <NavLink to='/inicio' title={lang ? 'Back Home' : 'Volver al inicio'}>B</NavLink>
+                <a href='#inicio' onClick={(e) => handleScroll(e, 'inicio')} title={lang ? 'Back Home' : 'Volver al inicio'}>B</a>
                 <h3>Bruno Sena DEV</h3>
                 <button className='eng-mode' onClick={()=> setLang(!lang)} title={lang ? 'Change Lang' : 'Cambiar Idioma'}>{lang ? 'ENG' : 'ESP'}</button>
             </div>
@@ -18,13 +26,13 @@ const HeaderNav = () => {
                 <HiOutlineX id='close-icon'/>
             </label>
             <nav className='nav' id='nav'>
-                <NavLink style={{ '--i': 1 }} to='/inicio' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Home' : 'Inicio'}</NavLink>
+                <a style={{ '--i': 1 }} href='#inicio' onClick={(e) => handleScroll(e, 'inicio')}>{lang ? 'Home' : 'Inicio'}</a>
 
-                <NavLink style={{ '--i': 2 }}  to='/portfolio' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Projects' : 'Proyectos'}</NavLink>
+                <a style={{ '--i': 2 }} href='#portfolio' onClick={(e) => handleScroll(e, 'portfolio')}>{lang ? 'Projects' : 'Proyectos'}</a>
 
-                <NavLink style={{ '--i': 3 }}  to='/resume' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Resume' : 'Curriculum'}</NavLink>
+                <a style={{ '--i': 3 }} href='#resume' onClick={(e) => handleScroll(e, 'resume')}>{lang ? 'Resume' : 'Curriculum'}</a>
 
-                <NavLink style={{ '--i': 4 }}  to='/contact' className={({isActive}) => isActive ? "active" : ""}>{lang ? 'Contact' : 'Contacto'}</NavLink>
+                <a style={{ '--i': 4 }} href='#contact' onClick={(e) => handleScroll(e, 'contact')}>{lang ? 'Contact' : 'Contacto'}</a>
 
             </nav>
         </header>

@@ -8,10 +8,6 @@ const Footer = () => {
 
     return (
         <footer className='footer'>
-            <div className='footer-links'>
-                <a href='https://www.linkedin.com/in/bruno-sena-webdev' target='_blank' rel='noreferrer' title='LinkedIn'><BiLogoLinkedin/></a>
-                <a href='https://github.com/brujavsen' target='_blank' rel='noreferrer' title='GitHub'><BiLogoGithub/></a>
-            </div>
             <p>Bruno Sena &copy; {year} &middot; {lang ? 'Frontend Developer' : 'Desarrollador Frontend'}</p>
         </footer>
     )

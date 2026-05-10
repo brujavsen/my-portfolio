@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-//Font
-$font-p: 'Poppins', sans-serif;
+/* COLORS */
+$primary: #660000; /* Rojo imperial */
+$accent: #8B0000; /* Rojo oscuro */
+$accent-light: #F5F5F5; /* Blanco humo para fondos */
+$white: #FFFFFF;
+$black: #000000;
+$gray: #333333; /* Gris oscuro para texto secundario */
 
-//Colores Light Mode
-$primary: #0A4A3C;
-$accent: #F2B759;
-$accent-light: rgba(242, 183, 89, 0.15);
-$white: #FFF;
-$gray: #3d6b60;
-$gray-p: #d2d2d2;
-
-//Colores Dark Mode
-$black: #000;
+/* FONT */
+$font-p: 'Inter', sans-serif;
 
 //Tamaños de Media Queries
 $telefono: 480px;

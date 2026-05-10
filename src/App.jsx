@@ -1,20 +1,45 @@
-import MainRoutes from './Routes/MainRoutes';
 import React, { useRef } from 'react';
-import { BiMoon } from "react-icons/bi";
+import HeaderNav from './components/Layout/HeaderNav';
+import Index from './components/Index';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Footer from './components/Layout/Footer';
+import { LangContext } from './Routes/MainRoutes';
 
 function App() {
-  const divLayout = useRef(null);
-  const handleDarkMode = () => {
-    if (divLayout.current) {
-      divLayout.current.parentNode.classList.toggle('dark');
-    }
-  };
+  const [lang, setLang] = React.useState(false);
 
   return (
-    <div className='layout' ref={divLayout}>
-      <BiMoon className='dark-mode' onClick={handleDarkMode} title='Dark Mode'/>
-      <MainRoutes/>
-    </div>
+    <LangContext.Provider value={[lang, setLang]}>
+      <div className='layout'>
+        
+        {/* HEADER & NAV */}
+        <HeaderNav/>
+
+        {/* MAIN CONTENT - Single Page with Scroll */}
+        <section className='content'>
+          <div id="inicio">
+            <Index/>
+          </div>
+          
+          <div id="portfolio" style={{ paddingTop: '100px' }}>
+            <Portfolio/>
+          </div>
+          
+          <div id="resume" style={{ paddingTop: '100px' }}>
+            <Resume/>
+          </div>
+          
+          <div id="contact" style={{ paddingTop: '100px' }}>
+            <Contact/>
+          </div>
+        </section>
+        
+        {/* FOOTER */}
+        <Footer/>
+      </div>
+    </LangContext.Provider>
   );
 }
 

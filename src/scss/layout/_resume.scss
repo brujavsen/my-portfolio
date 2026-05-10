@@ -5,7 +5,7 @@
 .resume-page {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    color: v.$primary;
+    color: v.$black;
 
     /* INFO BASIC */
     .info-basic {
@@ -13,24 +13,27 @@
 
       h2 {
         &:nth-child(1) {
-          color: v.$primary;
-          font-size: 3.5rem;
+          color: v.$black;
+          font-size: 2.5rem;
+          font-weight: 600;
           @include m.desktop {
-            color: v.$primary;
             font-size: 2rem;
           }
         }
         &:nth-child(2) {
-          font-size: 3.5rem;
+          font-size: 2.5rem;
+          font-weight: 700;
           @include m.desktop {
             font-size: 2rem;
           }
         }
       }
       p {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        color: v.$gray;
+        line-height: 1.6;
         @include m.desktop {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
         }
       }
     }
@@ -43,52 +46,57 @@
       flex-direction: column;
 
       div {
-        box-shadow: 0px 0px 2px #eee;
-        border-radius: 10px;
+        border: 1px solid v.$gray;
+        border-radius: 8px;
         width: 100%;
         height: fit-content;
         margin: 10px 0;
         word-wrap: break-word;
         text-align: center;
+        background: v.$white;
       }
       h3 {
         text-align: center;
-        font-size: 3rem;
-        text-transform: uppercase;
-        color: v.$white;
-        background-color: v.$primary;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: v.$black;
+        background-color: v.$accent-light;
+        padding: 1rem;
         @include m.tablet {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
       }
       p {
         margin: 2rem;
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         @include m.tablet {
-          font-size: 2rem;
+          font-size: 1.4rem;
         }
         &:nth-child(even) {
-          color: v.$primary;
+          color: v.$gray;
         }
       }
 
       i {
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 1rem;
+        color: v.$primary;
         @include m.tablet {
-          font-size: 3.2rem;
+          font-size: 2.5rem;
         }
       }
 
       .lang {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         @include m.tablet {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
         }
         display: block;
         font-weight: 600;
+        color: v.$black;
         span {
-          font-weight: 300;
+          font-weight: 400;
+          color: v.$gray;
         }
       }
     }
@@ -99,13 +107,14 @@
       grid-row: 5 / 6;
     
       h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        text-transform: uppercase;
-        border-radius: 2rem;
-        background-color: v.$primary;
+        font-weight: 600;
+        border-radius: 8px;
+        background-color: v.$accent-light;
+        color: v.$black;
         @include m.tablet {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
         }
       }
       section{
@@ -117,14 +126,15 @@
         }
       }
       .card {
-        box-shadow: 0px 0px 2px #eee;
-        padding: 0 2rem;
-        border-radius: 5px;
+        border: 1px solid v.$gray;
+        padding: 2rem;
+        border-radius: 8px;
+        background: v.$white;
         h3 {
-          text-transform: uppercase;
+          font-weight: 600;
+          color: v.$black;
           span {
-            font-weight: 500;
-            text-transform: capitalize;
+            font-weight: 400;
           }
         }
         img {
@@ -142,6 +152,7 @@
         }
         .btn-open-card {
           font-size: 3rem;
+          color: v.$primary;
         }
       }
     }
@@ -151,13 +162,13 @@
       grid-row: 6 / 7;
       
       h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
-        text-transform: uppercase;
-        background-color: v.$primary;
-        color: v.$white;
+        font-weight: 600;
+        background-color: v.$accent-light;
+        color: v.$black;
         @include m.tablet {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
         }
       }
       section{
@@ -170,22 +181,26 @@
         }
       }
       .card {
-        border-radius: 5px;
-        padding: 1.3rem;
-        box-shadow: 0px 0px 2px #eee;
+        border-radius: 8px;
+        padding: 1.5rem;
+        border: 1px solid v.$gray;
+        background: v.$white;
         p {
           &:nth-child(1) {
-            font-size: 2rem;
-            font-weight: bold;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: v.$black;
           }
           &:nth-child(2) {
-            font-size: 2rem;
-            font-weight: 500;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: v.$gray;
           }
         }
         a {
-          color: v.$accent;
-          font-weight: bold;
+          color: v.$primary;
+          font-weight: 600;
+          text-decoration: none;
         }
       }
     }
