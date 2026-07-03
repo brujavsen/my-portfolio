@@ -18,8 +18,8 @@ export const works = [
         id: 'classback',
         name: 'ClassBack',
         nameEng: 'ClassBack',
-        url: 'https://classback-testweb.netlify.app/',
-        technology: 'React, Node.js, CSS',
+        url: 'https://classback.app/',
+        technology: 'React, TypeScript, Node.js, CSS',
         category: 'Plataforma Educativa',
         categoryEng: 'Educational Platform',
         image: 'project-10',
@@ -28,6 +28,19 @@ export const works = [
         statusEng: 'In development',
         description: 'Plataforma educativa tipo red social donde estudiantes comparten, organizan y descubren contenido académico. Proyecto en fase activa, postulando a Fondos NODO 2026.',
         descriptionEng: 'Social-network-style educational platform where students share, organize, and discover academic content. In active development, applying to Fondos NODO 2026.'
+    },
+    {
+        id: 'chainexp',
+        name: 'ChainExp',
+        nameEng: 'ChainExp',
+        url: 'https://chainexp.netlify.app/',
+        technology: 'React, TypeScript, Node.js, CSS',
+        category: 'Aplicación personal',
+        categoryEng: 'Personal application',
+        image: 'project-12',
+        featured: true,
+        description: 'Aplicación personal para el seguimiento de hábitos y habilidades, con un enfoque cualitativo y fundamentado en la psicología del comportamiento.',
+        descriptionEng: 'Personal application for tracking habits and skills, with a qualitative approach based on behavioral psychology.'
     },
     {
         id: 'karatesite',

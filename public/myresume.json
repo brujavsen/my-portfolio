@@ -166,6 +166,39 @@
         {
           "studyType": "certification",
           "degreeAchieved": false,
+          "name": "AI for Research and Insights",
+          "nameEng": "AI for Research and Insights",
+          "startDate": "2024-05-01",
+          "institution": {
+            "name": "Coursera",
+            "URL": "https://www.coursera.org/account/accomplishments/verify/YCC13X5LBGMQ"
+          }
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "AI for Brainstorming and Planning",
+          "nameEng": "AI for Brainstorming and Planning",
+          "startDate": "2024-05-01",
+          "institution": {
+            "name": "Coursera",
+            "URL": "https://www.coursera.org/account/accomplishments/verify/O328I7YDQV72"
+          }
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
+          "name": "AI for App Building",
+          "nameEng": "AI for App Building",
+          "startDate": "2024-05-01",
+          "institution": {
+            "name": "Coursera",
+            "URL": "https://www.coursera.org/account/accomplishments/verify/4HD9FCSN2LOX"
+          }
+        },
+        {
+          "studyType": "certification",
+          "degreeAchieved": false,
           "name": "JavaScript Moderno — 20+ Proyectos",
           "nameEng": "Modern JavaScript — 20+ Projects",
           "startDate": "2023-07-01",
@@ -251,13 +284,7 @@
           }
         ],
         "contactMails": [
-          "brunojavsena@gmail.com"
-        ],
-        "phoneNumbers": [
-          {
-            "number": "095048957",
-            "countryCode": "+598"
-          }
+          "brudev97@gmail.com"
         ]
       },
       "preferences": {

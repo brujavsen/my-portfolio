@@ -3,11 +3,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=brujavsen&label=Profile%20views&color=190eb4&style=flat" alt="brujavsen" /> </p>
 
-- 🔭 I’m currently working on [Site web - Karate Tai Jitsu](https://karate-tai-jitsu-web.vercel.app/)
+- 🔭 I’m currently working on [ClassBack](https://classback.app/)
 
-- 🌱 I’m currently learning **Course ReactJS**
+- 🌱 I’m currently learning **Course TypeScript**
 
-- 👨‍💻 All of my projects are available at [My Portfolio](https://portfolio-bruno-sena.vercel.app/inicio)
+- 👨‍💻 All of my projects are available at [My Portfolio](https://portfolio-bruno-sena.vercel.app/)
 
 - 📫 How to reach me **brudev97@gmail.com**
 

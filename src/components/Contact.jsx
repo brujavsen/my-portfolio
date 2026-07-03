@@ -6,19 +6,37 @@ import { LangContext } from '../Routes/MainRoutes';
 const Contact = () => {
   const [lang, setLang] = useContext(LangContext);
   const [message, setMessage] = useState({});
+  const [error, setError] = useState('');
   const [isExpanded, setIsExpanded] = useState(true);
 
   const getInfoMessage = e => {
-
+    e.preventDefault();
     let info = e.target;
     
-    let infoMsg = {
-      name: info.name.value,
-      surname: info.surname.value,
-      description: info.description.value 
-    }
+    const name = info.name.value.trim();
+    const surname = info.surname.value.trim();
+    const description = info.description.value.trim();
 
-    setMessage(infoMsg);
+    // OWASP A4: Insecure Design / Input Validation
+    if (!name || name.length > 50 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]*$/.test(name)) {
+      setError(lang ? 'Invalid name format or length.' : 'Formato o longitud de nombre inválido.');
+      return;
+    }
+    if (!surname || surname.length > 50 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]*$/.test(surname)) {
+      setError(lang ? 'Invalid surname format or length.' : 'Formato o longitud de apellido inválido.');
+      return;
+    }
+    if (!description || description.length > 500) {
+      setError(lang ? 'Invalid description length.' : 'Longitud de descripción inválida.');
+      return;
+    }
+    setError('');
+
+    // Securely encode URI components to prevent parameter injection
+    const safeSubject = encodeURIComponent(`Hello, I'm ${name} ${surname}`);
+    const safeBody = encodeURIComponent(description);
+    
+    window.location.href = `mailto:brudev97@gmail.com?subject=${safeSubject}&body=${safeBody}`;
   }
 
   return (
@@ -29,10 +47,11 @@ const Contact = () => {
       </div>
       {isExpanded && (
         <>
-          <form className='contact' action={`mailto:brudev97@gmail.com?subject=Hello, I'm ${message.name + ' ' + message.surname}&body=${message.description}`} onSubmit={getInfoMessage}>
-              <input type='text' name='name' placeholder={lang ? 'Name' : 'Nombre'}/>
-              <input type='text' name='surname' placeholder={lang ? 'Surname' : 'Apellido'}/>
-              <textarea name='description' placeholder={lang ? 'Contact Reason...' : 'Motivo de Contacto...'} />
+          <form className='contact' onSubmit={getInfoMessage}>
+              {error && <div style={{color: 'red', marginBottom: '10px'}}>{error}</div>}
+              <input type='text' name='name' placeholder={lang ? 'Name' : 'Nombre'} required maxLength="50" />
+              <input type='text' name='surname' placeholder={lang ? 'Surname' : 'Apellido'} required maxLength="50" />
+              <textarea name='description' placeholder={lang ? 'Contact Reason...' : 'Motivo de Contacto...'} required maxLength="500" />
               <input type='submit' value={lang ? 'Send' : 'Enviar'}/>
           </form>
           <div className='contact-media'>
