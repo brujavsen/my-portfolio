@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "backHome": "Back Home",
+    "changeLang": "Change Lang",
+    "langButton": "ENG",
+    "home": "Home",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tag": "Open to work",
+    "name": "Bruno Sena",
+    "titleAfter": "— Frontend Developer from Uruguay. I build real web products with React.",
+    "subtitle": "Winner at Fondos NODO 2026 with ClassBack, an educational platform. Also a finalist at Fondos NODO 2025. Looking for my first role in a development team.",
+    "seeWork": "See my work",
+    "getInTouch": "Get in touch"
+  },
+  "achievements": {
+    "heading": "Achievements",
+    "winner": {
+      "title": "Winner — Fondos NODO 2026",
+      "description": "ClassBack was selected as a winner of the NODO funding program. Now building it out: a social network for academic content where students share and discover study resources."
+    },
+    "finalist": {
+      "title": "Finalist — Fondos NODO 2025",
+      "description": "HandUbe was selected as a finalist in the NODO funding program, competing against multiple projects at a national level."
+    }
+  },
+  "portfolio": {
+    "heading": "Projects",
+    "subtitle": "A selection of real projects I've built",
+    "visitProject": "Visit project",
+    "comingSoon": "Coming soon"
+  },
+  "resume": {
+    "heading": "Resume",
+    "skills": "Skills",
+    "languages": "Languages",
+    "certificates": "Certificates",
+    "institution": "Institution",
+    "date": "Date",
+    "viewCertificate": "View certificate",
+    "loading": "Loading..."
+  },
+  "contact": {
+    "heading": "Contact",
+    "name": "Name",
+    "surname": "Surname",
+    "reason": "Contact Reason...",
+    "send": "Send",
+    "contactMe": "Contact me",
+    "errors": {
+      "name": "Invalid name format or length.",
+      "surname": "Invalid surname format or length.",
+      "description": "Invalid description length."
+    }
+  },
+  "footer": {
+    "role": "Frontend Developer"
+  }
+}

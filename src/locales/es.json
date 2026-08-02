@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "backHome": "Volver al inicio",
+    "changeLang": "Cambiar Idioma",
+    "langButton": "ESP",
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "resume": "Curriculum",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "tag": "Disponible para trabajar",
+    "name": "Bruno Sena",
+    "titleAfter": "— Desarrollador Frontend en Uruguay. Construyo productos web reales con React.",
+    "subtitle": "Ganador de Fondos NODO 2026 con ClassBack, una plataforma educativa. También finalista en Fondos NODO 2025. Busco mi primer rol en un equipo de desarrollo.",
+    "seeWork": "Ver proyectos",
+    "getInTouch": "Contacto"
+  },
+  "achievements": {
+    "heading": "Logros",
+    "winner": {
+      "title": "Ganador — Fondos NODO 2026",
+      "description": "ClassBack fue seleccionado como ganador del programa de financiamiento NODO. Ahora en desarrollo: una red social de contenido académico donde estudiantes comparten y descubren recursos de estudio."
+    },
+    "finalist": {
+      "title": "Finalista — Fondos NODO 2025",
+      "description": "HandUbe fue seleccionado como finalista en el programa de financiamiento NODO, compitiendo contra múltiples proyectos a nivel nacional."
+    }
+  },
+  "portfolio": {
+    "heading": "Proyectos",
+    "subtitle": "Una selección de proyectos reales que he construido",
+    "visitProject": "Ir al proyecto",
+    "comingSoon": "Próximamente"
+  },
+  "resume": {
+    "heading": "Currículum",
+    "skills": "Habilidades",
+    "languages": "Idiomas",
+    "certificates": "Certificados",
+    "institution": "Institución",
+    "date": "Fecha",
+    "viewCertificate": "Ver certificado",
+    "loading": "Cargando..."
+  },
+  "contact": {
+    "heading": "Contacto",
+    "name": "Nombre",
+    "surname": "Apellido",
+    "reason": "Motivo de Contacto...",
+    "send": "Enviar",
+    "contactMe": "Contáctame",
+    "errors": {
+      "name": "Formato o longitud de nombre inválido.",
+      "surname": "Formato o longitud de apellido inválido.",
+      "description": "Longitud de descripción inválida."
+    }
+  },
+  "footer": {
+    "role": "Desarrollador Frontend"
+  }
+}

@@ -1,14 +1,14 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { BiLogoLinkedin, BiLogoGithub } from "react-icons/bi";
-import { LangContext } from '../../Routes/MainRoutes';
+import { useLang } from '../../context/LangContext';
 
 const Footer = () => {
-    const [lang] = useContext(LangContext);
+    const { t } = useLang();
     let year = new Date().getFullYear();
 
     return (
         <footer className='footer'>
-            <p>Bruno Sena &copy; {year} &middot; {lang ? 'Frontend Developer' : 'Desarrollador Frontend'}</p>
+            <p>Bruno Sena &copy; {year} &middot; {t('footer.role')}</p>
         </footer>
     )
 }

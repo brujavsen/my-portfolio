@@ -1,9 +1,9 @@
-import { Fragment, useEffect, useState, useContext } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { BiLogoHtml5, BiLogoBootstrap, BiLogoCss3, BiLogoTailwindCss, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoReact, BiChevronDown, BiChevronUp } from "react-icons/bi";
-import { LangContext } from '../Routes/MainRoutes';
+import { useLang } from '../context/LangContext';
 
 const Resume = () => {
-  const [lang] = useContext(LangContext);
+  const { lang, t } = useLang();
   const [data, setData] = useState({});
   const [isExpanded, setIsExpanded] = useState(true);
 
@@ -33,7 +33,7 @@ const Resume = () => {
   return (
     <div className='page'>
       <div className='section-header' onClick={() => setIsExpanded(!isExpanded)}>
-        <h1 className='heading'>{lang ? 'Resume' : 'Currículum'}</h1>
+        <h1 className='heading'>{t('resume.heading')}</h1>
         {isExpanded ? <BiChevronUp className='toggle-icon'/> : <BiChevronDown className='toggle-icon'/>}
       </div>
       {isExpanded && (
@@ -49,14 +49,14 @@ const Resume = () => {
                 </Fragment>
               ))
             ) : (
-              <div>Loading...</div>
+              <div>{t('resume.loading')}</div>
             )}
           </div>
-          
+
           {/* Conocimientos */}
           <div className='fbasis know-cnt'>
             <div className='skills-cnt'>
-              <h3>{lang ? 'Skills' : 'Habilidades'}</h3>
+              <h3>{t('resume.skills')}</h3>
               <i><BiLogoHtml5/></i>
               <i><BiLogoCss3/></i>
               <i><BiLogoJavascript/></i>
@@ -68,7 +68,7 @@ const Resume = () => {
             </div>
             {/* Idiomas */}
             <div>
-              <h3>{lang ? 'Languages' : 'Idiomas'}</h3>
+              <h3>{t('resume.languages')}</h3>
               {data.length > 0 ? (
                 data.map((about, index) => (
                   <section key={index}>
@@ -80,13 +80,13 @@ const Resume = () => {
                   </section>
                 ))
               ) : (
-                <div>Loading...</div>
+                <div>{t('resume.loading')}</div>
               )}
             </div>
           </div>
           {/* Educacion */}
           <div className='fbasis education'>
-            <h2>{lang ? "Certificates" : "Certificados"}</h2>
+            <h2>{t('resume.certificates')}</h2>
             <div>
               {data.length > 0 ? (
                 data.map((about, index) => (
@@ -94,15 +94,15 @@ const Resume = () => {
                     {about.knowledge.studies.map((study, index) => (
                       <div className='card' key={index}>
                         <p>{lang ? (study.nameEng || study.name) : study.name}</p>
-                        <p>{lang ? 'Institution' : 'Institución'}: {study.institution.name}</p>
-                        <p>{lang ? 'Date' : 'Fecha'}: {study.startDate}</p>
-                        {study.institution.URL && <a href={study.institution.URL} target='_blank' rel='noreferrer'>{lang ? 'View certificate' : 'Ver certificado'}</a>}
+                        <p>{t('resume.institution')}: {study.institution.name}</p>
+                        <p>{t('resume.date')}: {study.startDate}</p>
+                        {study.institution.URL && <a href={study.institution.URL} target='_blank' rel='noreferrer'>{t('resume.viewCertificate')}</a>}
                       </div>
                     ))}
                   </section>
                 ))
               ) : (
-                <div>Loading...</div>
+                <div>{t('resume.loading')}</div>
               )}
             </div>
           </div>

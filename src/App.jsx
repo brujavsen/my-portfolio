@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import HeaderNav from './components/Layout/HeaderNav';
 import Index from './components/Index';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Layout/Footer';
-import { LangContext } from './Routes/MainRoutes';
+import { LangContext } from './context/LangContext';
 
 function App() {
   const [lang, setLang] = React.useState(false);

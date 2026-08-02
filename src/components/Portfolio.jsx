@@ -1,21 +1,21 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import ListWorks from './ListWorks';
-import { LangContext } from '../Routes/MainRoutes';
+import { useLang } from '../context/LangContext';
 import { BiChevronDown, BiChevronUp } from 'react-icons/bi';
 
 const Portfolio = () => {
-    const [lang] = useContext(LangContext);
+    const { t } = useLang();
     const [isExpanded, setIsExpanded] = useState(true);
 
     return (
         <div className='page'>
             <div className='section-header' onClick={() => setIsExpanded(!isExpanded)}>
-                <h1 className='heading'>{lang ? "Projects" : "Proyectos"}</h1>
+                <h1 className='heading'>{t('portfolio.heading')}</h1>
                 {isExpanded ? <BiChevronUp className='toggle-icon'/> : <BiChevronDown className='toggle-icon'/>}
             </div>
             {isExpanded && (
                 <>
-                    <p className='portfolio-subtitle'>{lang ? "A selection of real projects I've built" : "Una selección de proyectos reales que he construido"}</p>
+                    <p className='portfolio-subtitle'>{t('portfolio.subtitle')}</p>
                     <ListWorks/>
                 </>
             )}

@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { works } from '../data/works'
-import { LangContext } from '../Routes/MainRoutes';
+import { useLang } from '../context/LangContext';
 
 const ListWorks = ({limit}) => {
-    const [lang] = useContext(LangContext);
+    const { lang, t } = useLang();
 
     return (
         <section className='works'>
@@ -22,7 +22,7 @@ const ListWorks = ({limit}) => {
                                 {work.status && <span className='status-badge'>{lang ? (work.statusEng || work.status) : work.status}</span>}
                                 <h2>{lang ? work.nameEng : work.name}</h2>
                                 <h3>{work.technology}</h3>
-                                {work.url ? <a href={work.url} target='_blank' rel='noreferrer'>{lang ? 'Visit project' : 'Ir al proyecto'}</a> : <span>{lang ? 'Coming soon' : 'Próximamente'}</span>}
+                                {work.url ? <a href={work.url} target='_blank' rel='noreferrer'>{t('portfolio.visitProject')}</a> : <span>{t('portfolio.comingSoon')}</span>}
                             </div>
                         </article>
                     )

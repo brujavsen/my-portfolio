@@ -24,10 +24,10 @@ export const works = [
         categoryEng: 'Educational Platform',
         image: 'project-10',
         featured: true,
-        status: 'En desarrollo',
-        statusEng: 'In development',
-        description: 'Plataforma educativa tipo red social donde estudiantes comparten, organizan y descubren contenido académico. Proyecto en fase activa, postulando a Fondos NODO 2026.',
-        descriptionEng: 'Social-network-style educational platform where students share, organize, and discover academic content. In active development, applying to Fondos NODO 2026.'
+        status: 'Ganador NODO 2026',
+        statusEng: 'NODO 2026 Winner',
+        description: 'Plataforma educativa tipo red social donde estudiantes comparten, organizan y descubren contenido académico. Proyecto ganador de Fondos NODO 2026, en desarrollo activo.',
+        descriptionEng: 'Social-network-style educational platform where students share, organize, and discover academic content. Winner of Fondos NODO 2026, in active development.'
     },
     {
         id: 'chainexp',
