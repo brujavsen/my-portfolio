@@ -132,5 +132,18 @@ export const works = [
         featured: false,
         description: 'Aplicación que consume la API de CoinGecko para mostrar cotizaciones en tiempo real con filtros por moneda y ordenamiento.',
         descriptionEng: 'App consuming the CoinGecko API to display real-time quotes with currency filters and sorting.'
+    },
+    {
+        id: 'capmycash',
+        name: 'CapMyCash',
+        nameEng: 'CapMyCash',
+        url: 'https://capmycash-brusena.netlify.app/',
+        technology: 'HTML, CSS, JavaScript',
+        category: 'Herramienta Web',
+        categoryEng: 'Web Tool',
+        image: 'project-13',
+        featured: false,
+        description: 'Control de gastos del hogar para Uruguay. Pensada para que cualquiera la use, sobre todo personas mayores.',
+        descriptionEng: 'Household expense tracker for Uruguay. Designed so anyone can use it, especially older adults.'
     }
 ]
